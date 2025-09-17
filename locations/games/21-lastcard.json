@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Last Card",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "lastcard"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "lastcard"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "lastcard"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Last Card",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Last Card/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 735,
+		"y": 400
+	  }
+	]
+  },
+  {
+    "name": "Last Card",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Last Card/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 775,
+		"y": 400
+	  }
+	]
+  },
+  {
+    "name": "Last Card",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Last Card/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 815,
+		"y": 400
+	  }
+	]
+  }
+]

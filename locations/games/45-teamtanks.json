@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Team Tanks",
+    "sections": [
+      {
+        "name": "Clear Field #1",
+        "access_rules": [
+          "teamtanks"
+        ]
+      },
+      {
+        "name": "Clear Field #2",
+        "access_rules": [
+          "teamtanks"
+        ]
+      },
+      {
+        "name": "Clear Field #3",
+        "access_rules": [
+          "teamtanks"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Team Tanks",
+	"sections": [
+	  {
+		"name": "Clear Field #1",
+		"ref": "Team Tanks/Clear Field #1"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 210,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "Team Tanks",
+	"sections": [
+	  {
+		"name": "Clear Field #2",
+		"ref": "Team Tanks/Clear Field #2"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 250,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "Team Tanks",
+	"sections": [
+	  {
+		"name": "Clear Field #3",
+		"ref": "Team Tanks/Clear Field #3"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 290,
+		"y": 780
+	  }
+	]
+  }
+]

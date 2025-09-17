@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Takoyaki",
+    "sections": [
+      {
+        "name": "Defeat CPU",
+        "access_rules": [
+          "takoyaki"
+        ]
+      }
+    ],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 600,
+		"y": 520
+	  }
+	]
+  }
+]

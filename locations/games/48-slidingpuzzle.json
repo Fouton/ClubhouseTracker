@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Sliding Puzzle",
+    "sections": [
+      {
+        "name": "300 Points with Turtle",
+        "access_rules": [
+          "slidingpuzzle"
+        ]
+      },
+      {
+        "name": "300 Points with Rabbit",
+        "access_rules": [
+          "slidingpuzzle"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sliding Puzzle",
+	"sections": [
+	  {
+		"name": "300 Points with Turtle",
+		"ref": "Sliding Puzzle/300 Points with Turtle"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 755,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "Sliding Puzzle",
+	"sections": [
+	  {
+		"name": "300 Points with Rabbit",
+		"ref": "Sliding Puzzle/300 Points with Rabbit"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 795,
+		"y": 780
+	  }
+	]
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Golf",
+    "sections": [
+      {
+        "name": "Play 3 Holes",
+        "access_rules": [
+          "golf"
+        ]
+      },
+      {
+        "name": "Play 9 Holes",
+        "access_rules": [
+          "golf"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Golf",
+	"sections": [
+	  {
+		"name": "Play 3 Holes",
+		"ref": "Golf/Play 3 Holes"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 930,
+		"y": 520
+	  }
+	]
+  },
+  {
+    "name": "Golf",
+	"sections": [
+	  {
+		"name": "Play 9 Holes",
+		"ref": "Golf/Play 9 Holes"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 970,
+		"y": 520
+	  }
+	]
+  }
+]

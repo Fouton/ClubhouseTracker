@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Billiards",
+    "sections": [
+      {
+        "name": "Win at 9-Ball",
+        "access_rules": [
+          "billiards"
+        ]
+      },
+      {
+        "name": "Win with Simple Rules",
+        "access_rules": [
+          "billiards"
+        ]
+      },
+      {
+        "name": "Win at 8-Ball",
+        "access_rules": [
+          "billiards"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Billiards",
+	"sections": [
+	  {
+		"name": "Win at 9-Ball",
+		"ref": "Billiards/Win at 9-Ball"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1085,
+		"y": 520
+	  }
+	]
+  },
+  {
+    "name": "Billiards",
+	"sections": [
+	  {
+		"name": "Win with Simple Rules",
+		"ref": "Billiards/Win with Simple Rules"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1125,
+		"y": 520
+	  }
+	]
+  },
+  {
+    "name": "Billiards",
+	"sections": [
+	  {
+		"name": "Win at 8-Ball",
+		"ref": "Billiards/Win at 8-Ball"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1165,
+		"y": 520
+	  }
+	]
+  }
+]

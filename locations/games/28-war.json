@@ -1,0 +1,20 @@
+[
+  {
+    "name": "War",
+    "sections": [
+      {
+        "name": "Defeat CPU",
+        "access_rules": [
+          "war"
+        ]
+      }
+    ],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 425,
+		"y": 520
+	  }
+	]
+  }
+]

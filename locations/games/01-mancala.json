@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Mancala",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "mancala"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "mancala"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "mancala"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mancala",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Mancala/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 385,
+		"y": 160
+	  }
+	]
+  },
+  {
+    "name": "Mancala",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Mancala/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 425,
+		"y": 160
+	  }
+	]
+  },
+  {
+    "name": "Mancala",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Mancala/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 465,
+		"y": 160
+	  }
+	]
+  }
+]

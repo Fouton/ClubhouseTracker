@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Pig's Tail",
+    "sections": [
+      {
+        "name": "Defeat CPU",
+        "access_rules": [
+          "pigstail"
+        ]
+      }
+    ],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 775,
+		"y": 520
+	  }
+	]
+  }
+]

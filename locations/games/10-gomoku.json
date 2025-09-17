@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Gomoku",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "gomoku"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "gomoku"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "gomoku"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gomoku",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Gomoku/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 385,
+		"y": 285
+	  }
+	]
+  },
+  {
+    "name": "Gomoku",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Gomoku/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 425,
+		"y": 285
+	  }
+	]
+  },
+  {
+    "name": "Gomoku",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Gomoku/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 465,
+		"y": 285
+	  }
+	]
+  }
+]

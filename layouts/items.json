@@ -1,0 +1,935 @@
+{
+  "item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 122,
+			"item_height": 24,
+			"item_margin": "0,0",
+			"rows": [
+			  ["required"],
+			  ["completed"],
+			  ["available"]
+			]
+		  },
+		  {
+			"type": "array",
+			"orientation": "vertical",
+			"margin": "0,0",
+			"content": [
+			  {
+				"type": "array",
+				"orientation": "horizontal",
+				"margin": "0,0",
+				"content": [
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 1,
+					"item_height": 1,
+					"item_margin": "0,0",
+					"rows": [
+					  ["blank"]
+					]
+				  },
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 64,
+					"item_height": 20,
+					"item_margin": "1,0",
+					"rows": [
+					  [ "mancala", "dotsandboxes", "yacht",
+						"fourinarow", "hitandblow", "ninemensmorris", "hex" ]
+					]
+				  }
+				]
+			  },
+			  {
+				"type": "array",
+				"orientation": "horizontal",
+				"margin": "0,0",
+				"content": [
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 2,
+					"item_height": 1,
+					"item_margin": "2,0",
+					"rows": [
+					  ["blank"]
+					]
+				  },
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 12,
+					"item_height": 8,
+					"item_margin": "1,1",
+					"rows": [
+					  [ "mancala-fm-p1", "mancala-fm-cpu", "mancala-fm-random" ],
+					  [ "blank", "blank", "blank", "blank" ]
+					]
+				  },
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 12,
+					"item_height": 8,
+					"item_margin": "1,1",
+					"rows": [
+					  [ "dotsandboxes-fm-p1", "dotsandboxes-fm-cpu", "dotsandboxes-fm-random" ],
+					  [ "blank", "blank", "blank", "blank" ]
+					]
+				  },
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 12,
+					"item_height": 8,
+					"item_margin": "1,1",
+					"rows": [
+					  [ "blank", "blank", "blank", "blank" ]
+					]
+				  },
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 12,
+					"item_height": 8,
+					"item_margin": "1,1",
+					"rows": [
+					  [ "fourinarow-fm-p1", "fourinarow-fm-cpu", "fourinarow-fm-random" ],
+					  [ "blank", "blank", "blank", "blank" ]
+					]
+				  },
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 12,
+					"item_height": 8,
+					"item_margin": "1,1",
+					"rows": [
+					  [  ],
+					  [ "blank", "blank", "blank", "blank" ]
+					]
+				  },
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 12,
+					"item_height": 8,
+					"item_margin": "1,1",
+					"rows": [
+					  [ "ninemensmorris-fm-p1", "ninemensmorris-fm-cpu", "ninemensmorris-fm-random" ],
+					  [ "blank", "blank", "blank", "blank" ]
+					]
+				  },
+				  {
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_width": 12,
+					"item_height": 8,
+					"item_margin": "1,1",
+					"rows": [
+					  [ "hex-fm-p1", "hex-fm-cpu", "hex-fm-random" ],
+					  [ "blank", "blank", "blank", "blank" ]
+					]
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 1,
+			"item_height": 1,
+			"item_margin": "0,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 64,
+			"item_height": 20,
+			"item_margin": "1,0",
+			"rows": [
+		  [ "checkers", "hareandhounds", "gomoku", "dominoes", "chinesecheckers",
+			"ludo", "backgammon", "renegade", "chess" ]
+			]
+		  }
+		]
+	  },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 2,
+			"item_height": 1,
+			"item_margin": "2,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "checkers-fm-p1", "checkers-fm-cpu", "checkers-fm-random" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "hareandhounds-placement-fixed", "hareandhounds-placement-random" ],
+			  [],
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "hounds", "hare" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "gomoku-fm-p1", "gomoku-fm-cpu", "gomoku-fm-random" ],
+			  [ "gomoku-3-allow", "gomoku-3-forbid" ],
+			  [ "gomoku-4-allow", "gomoku-4-forbid" ],
+			  [ "gomoku-overline-allow", "gomoku-overline-forbid" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "dominoes-draw", "dominoes-pass" ],
+			  [],
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "dominoes-35", "dominoes-61" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "chinese-jumpown-allow", "chinese-jumpown-forbid" ],
+			  [ "chinese-enemyarea-allow", "chinese-enemyarea-forbid" ],
+			  [ "chinese-finish-first", "chinese-finish-all" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "ludo-start-no", "ludo-start-3", "ludo-start-1" ],
+			  [ "ludo-blocking-off", "ludo-blocking-on" ],
+			  [ "ludo-goal-exact", "ludo-goal-over" ],
+			  [ "ludo-finish-first", "ludo-finish-all" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [],
+			  [],
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "backgammon-play1", "backgammon-play3", "backgammon-play5" ],
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "renegade-fm-p1", "renegade-fm-cpu", "renegade-fm-random" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "chess-fm-p1", "chess-fm-cpu", "chess-fm-random" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  }
+		]
+      },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 1,
+			"item_height": 1,
+			"item_margin": "0,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 64,
+			"item_height": 20,
+			"item_margin": "1,0",
+			"rows": [
+			  [ "shogi", "minishogi", "hanafuda", "riichi", "lastcard",
+				"blackjack", "holdem", "president", "sevens" ]
+			]
+		  }
+		]
+	  },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 2,
+			"item_height": 1,
+			"item_margin": "2,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "shogi-fm-p1", "shogi-fm-cpu", "shogi-fm-random" ],
+			  [ "shogi-global", "shogi-classic" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "minishogi-fm-p1", "minishogi-fm-cpu", "minishogi-fm-random" ],
+			  [ "minishogi-global", "minishogi-classic" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "hanafuda-cherry-on", "hanafuda-cherry-off" ],
+			  [ "hanafuda-moon-on", "hanafuda-moon-off" ],
+			  [ "hanafuda-mario" ],
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "hanafuda-3round", "hanafuda-6round", "hanafuda-12round" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "riichi-dora-on", "riichi-dora-off" ],
+			  [ "riichi-global", "riichi-classic" ],
+			  [],
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "riichi-eastonly", "riichi-eastsouth" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "lastcard-finish-first", "lastcard-finish-all" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "blackjack-doubledown-on", "blackjack-doubledown-off" ],
+			  [ "blackjack-mario" ],
+			  [],
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "blackjack-5rounds", "blackjack-10rounds" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "holdem-mario" ],
+			  [],
+			  [],
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "holdem-5rounds", "holdem-10rounds" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "nlank", "president-8clear-on", "president-8clear-off", "blank" ],
+			  [ "president-reversal-on", "president-reversal-off" ],
+			  [ "president-restrictions-off", "president-restrictions-2card", "president-restrictions-3card" ],
+			  [ "president-downfall-on", "president-downfall-off" ],
+			  [ "president-mario" ],
+			  [ "president-5rounds", "president-10rounds" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "sevens-pass-5", "sevens-pass-3", "sevens-pass-1", "sevens-pass-off" ],
+			  [ "sevens-ak-off", "sevens-ak-on" ],
+			  [ "sevens-mario" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  }
+		]
+      },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 1,
+			"item_height": 1,
+			"item_margin": "0,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 64,
+			"item_height": 20,
+			"item_margin": "1,0",
+			"rows": [
+			  [ "speed", "matching", "war", "takoyaki", "pigstail",
+				"golf", "billiards", "bowling", "darts" ]
+			]
+		  }
+		]
+	  },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 2,
+			"item_height": 1,
+			"item_margin": "2,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "speed-joker-on", "speed-joker-off" ],
+			  [ "speed-mario" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "matching-fm-p1", "matching-fm-cpu", "matching-fm-random" ],
+			  [ "matching-match-again", "matching-match-end" ],
+			  [ "blank", "matching-type-2card", "matching-type-4card", "blank" ],
+			  [ "matching-mario" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "war-mario" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "takoyaki-fm-p1", "takoyaki-fm-cpu", "takoyaki-fm-random" ],
+			  [ "takoyaki-jokers-on", "takoyaki-jokers-off" ],
+			  [ "takoyaki-mario" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "pigstail-fm-p1", "pigstail-fm-cpu", "pigstail-fm-random" ],
+			  [ "pigstail-penalty-on", "pigstail-penalty-off" ],
+			  [ "pigstail-mario" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 10,
+			"item_height": 10,
+			"item_margin": "2,1",
+			"rows": [
+			  ["golf-hole-1","golf-hole-2","golf-hole-3"],
+			  ["golf-hole-4","golf-hole-5","golf-hole-6"],
+			  ["golf-hole-7","golf-hole-8","golf-hole-9"],
+			  ["golf-hole-random"],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "billiards-fm-p1", "billiards-fm-cpu", "billiards-fm-random" ],
+			  [ "billiards-numbers-off", "billiards-numbers-on" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "bowling-bumpers-off", "bowling-bumpers-on" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "darts-fm-p1", "darts-fm-cpu", "darts-fm-random" ],
+			  [ "darts-double", "darts-open" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  }
+		]
+	  },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 1,
+			"item_height": 1,
+			"item_margin": "0,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 64,
+			"item_height": 20,
+			"item_margin": "1,0",
+			"rows": [
+			  [ "carrom", "tennis", "soccer", "curling", "boxing",
+			  "baseball", "hockey", "slotcars", "fishing" ]
+			]
+		  }
+		]
+	  },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 2,
+			"item_height": 1,
+			"item_margin": "2,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "carrom-fm-p1", "carrom-fm-cpu", "carrom-fm-random" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "blank", "blank", "blank", "blank" ],
+			  [],
+			  [ "tennis-1game", "tennis-2game", "tennis-3game" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "curling-fm-p1", "curling-fm-cpu", "curling-fm-random" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "baseball-innings-3", "baseball-innings-6", "baseball-innings-9" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "hockey-5point", "hockey-10point" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "slotcars-play-1", "slotcars-play-2", "slotcars-play-3", "slotcars-play-all" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  }
+		]
+	  },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 1,
+			"item_height": 1,
+			"item_margin": "0,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 64,
+			"item_height": 20,
+			"item_margin": "1,0",
+			"rows": [
+			  [ "battletanks", "teamtanks", "shootinggallery", "6ballpuzzle", "slidingpuzzle",
+				"mahjong", "klondike", "spider", "piano" ]
+			]
+		  }
+		]
+	  },
+	  {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 2,
+			"item_height": 1,
+			"item_margin": "2,0",
+			"rows": [
+			  ["blank"]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [],
+			  [],
+			  [ "blank", "blank", "blank", "blank" ],
+			  [ "battletanks-play-1", "battletanks-play-2", "battletanks-play-3" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "6ballpuzzle-handi-off", "6ballpuzzle-handi-p1", "6ballpuzzle-handi-cpu" ],
+			  [ "6ballpuzzle-guide-on", "6ballpuzzle-guide-off" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "klondike-mario" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ "spider-mario" ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  },
+		  {
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"item_width": 12,
+			"item_height": 8,
+			"item_margin": "1,1",
+			"rows": [
+			  [ ],
+			  [ "blank", "blank", "blank", "blank" ]
+			]
+		  }
+		]
+	  }
+	]
+  }
+}

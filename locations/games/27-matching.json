@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Matching",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "matching"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "matching"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "matching"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Matching",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Matching/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 210,
+		"y": 520
+	  }
+	]
+  },
+  {
+    "name": "Matching",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Matching/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 250,
+		"y": 520
+	  }
+	]
+  },
+  {
+    "name": "Matching",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Matching/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 290,
+		"y": 520
+	  }
+	]
+  }
+]

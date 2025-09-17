@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Dominoes",
+    "sections": [
+      {
+        "name": "Win at Five-Up",
+        "access_rules": [
+          "dominoes"
+        ]
+      },
+      {
+        "name": "Win with Simple Rules",
+        "access_rules": [
+          "dominoes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dominoes",
+	"sections": [
+	  {
+		"name": "Win at Five-Up",
+		"ref": "Dominoes/Win at Five-Up"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 580,
+		"y": 285
+	  }
+	]
+  },
+  {
+    "name": "Dominoes",
+	"sections": [
+	  {
+		"name": "Win with Simple Rules",
+		"ref": "Dominoes/Win with Simple Rules"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 620,
+		"y": 285
+	  }
+	]
+  }
+]

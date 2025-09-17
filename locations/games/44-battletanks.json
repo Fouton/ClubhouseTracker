@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Battle Tanks",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "battletanks"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "battletanks"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "battletanks"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Battle Tanks",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Battle Tanks/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 35,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "Battle Tanks",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Battle Tanks/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 75,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "Battle Tanks",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Battle Tanks/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 115,
+		"y": 780
+	  }
+	]
+  }
+]

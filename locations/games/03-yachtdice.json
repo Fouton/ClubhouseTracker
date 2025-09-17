@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Yacht Dice",
+    "sections": [
+      {
+        "name": "Defeat CPU",
+        "access_rules": [
+          "yacht"
+        ]
+      }
+    ],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 775,
+		"y": 160
+	  }
+	]
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Bowling",
+    "sections": [
+      {
+        "name": "50 Points in 5 Frames",
+        "access_rules": [
+          "bowling"
+        ]
+      },
+      {
+        "name": "100 Points in 10 Frames",
+        "access_rules": [
+          "bowling"
+        ]
+      },
+      {
+        "name": "80 Points in Challenge",
+        "access_rules": [
+          "bowling"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bowling",
+	"sections": [
+	  {
+		"name": "50 Points in 5 Frames",
+		"ref": "Bowling/50 Points in 5 Frames"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1254,
+		"y": 520
+	  }
+	]
+  },
+  {
+    "name": "Bowling",
+	"sections": [
+	  {
+		"name": "100 Points in 10 Frames",
+		"ref": "Bowling/100 Points in 10 Frames"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1294,
+		"y": 520
+	  }
+	]
+  },
+  {
+    "name": "Bowling",
+	"sections": [
+	  {
+		"name": "80 Points in Challenge",
+		"ref": "Bowling/80 Points in Challenge"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1334,
+		"y": 520
+	  }
+	]
+  }
+]

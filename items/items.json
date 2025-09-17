@@ -1,0 +1,1764 @@
+﻿[
+  {
+    "name": "Mancala",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/mancala.png",
+    "codes": "mancala"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "mancala-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "mancala-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "mancala-fm-random"
+  },
+  
+  {
+    "name": "Dots and Boxes",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/dotsandboxes.png",
+    "codes": "dotsandboxes"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "dotsandboxes-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "dotsandboxes-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "dotsandboxes-fm-random"
+  },
+  
+  {
+    "name": "Yacht Dice",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/yacht.png",
+    "codes": "yacht"
+  },
+  
+  {
+    "name": "Four-in-a-Row",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/fourinarow.png",
+    "codes": "fourinarow"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "fourinarow-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "fourinarow-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "fourinarow-fm-random"
+  },
+  
+  {
+    "name": "Hit and Blow",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/hitandblow.png",
+    "codes": "hitandblow"
+  },
+  
+  {
+    "name": "Nine Men's Morris",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/ninemensmorris.png",
+    "codes": "ninemensmorris"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "ninemensmorris-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "ninemensmorris-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "ninemensmorris-fm-random"
+  },
+  
+  {
+    "name": "Hex",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/hex.png",
+    "codes": "hex"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "hex-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "hex-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "hex-fm-random"
+  },
+  
+  {
+    "name": "Checkers",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/checkers.png",
+    "codes": "checkers"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "checkers-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "checkers-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "checkers-fm-random"
+  },
+  
+  {
+    "name": "Hare and Hounds",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/hareandhounds.png",
+    "codes": "hareandhounds"
+  },
+  {
+    "name": "Play as Hounds",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "hounds"
+  },
+  {
+    "name": "Play as Hare",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "hare"
+  },
+  {
+    "name": "Hare Placement: Fixed",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "hareandhounds-placement-fixed"
+  },
+  {
+    "name": "Hare Placement: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "hareandhounds-placement-random"
+  },
+  
+  {
+    "name": "Gomoku",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/gomoku.png",
+    "codes": "gomoku"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "gomoku-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "gomoku-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "gomoku-fm-random"
+  },
+  {
+    "name": "3&3: Allow",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "gomoku-3-allow"
+  },
+  {
+    "name": "3&3: Forbid",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "gomoku-3-forbid"
+  },
+  {
+    "name": "4&4: Allow",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "gomoku-4-allow"
+  },
+  {
+    "name": "4&4: Forbid",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "gomoku-4-forbid"
+  },
+  {
+    "name": "Overline: Allow",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "gomoku-overline-allow"
+  },
+  {
+    "name": "Overline: Forbid",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "gomoku-overline-forbid"
+  },
+  
+  {
+    "name": "Dominoes",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/dominoes.png",
+    "codes": "dominoes"
+  },
+  {
+    "name": "Play 35-Point Match",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "dominoes-35"
+  },
+  {
+    "name": "Play 61-Point Match",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "dominoes-61"
+  },
+  {
+    "name": "Draw 1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "dominoes-draw"
+  },
+  {
+    "name": "Pass",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "dominoes-pass"
+  },
+  
+  {
+    "name": "Chinese Checkers",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/chinesecheckers.png",
+    "codes": "chinesecheckers"
+  },
+  {
+    "name": "Jump Own: Allow",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "chinese-jumpown-allow"
+  },
+  {
+    "name": "Jump Own: Forbid",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "chinese-jumpown-forbid"
+  },
+  {
+    "name": "Drop in Enemy Area: Allow",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "chinese-enemyarea-allow"
+  },
+  {
+    "name": "Drop in Enemy Area: Forbid",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "chinese-enemyarea-forbid"
+  },
+  {
+    "name": "Game Finish: 1st Place",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "chinese-finish-first"
+  },
+  {
+    "name": "Game Finish: All Places",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "chinese-finish-all"
+  },
+  
+  {
+    "name": "Ludo",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/ludo.png",
+    "codes": "ludo"
+  },
+  {
+    "name": "Starting Threshold: No Roll",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "ludo-start-no"
+  },
+  {
+    "name": "Starting Threshold: Roll 3 Times",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "ludo-start-3"
+  },
+  {
+    "name": "Starting Threshold: Roll 1 Time",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "ludo-start-1"
+  },
+  {
+    "name": "Blocking: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "ludo-blocking-on"
+  },
+  {
+    "name": "Blocking: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "ludo-blocking-off"
+  },
+  {
+    "name": "Goal: Exact",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "ludo-goal-exact"
+  },
+  {
+    "name": "Goal: Over OK",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "ludo-goal-over"
+  },
+  {
+    "name": "Game Finish: 1st",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "ludo-finish-first"
+  },
+  {
+    "name": "Game Finish: All",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "ludo-finish-all"
+  },
+  
+  {
+    "name": "Backgammon",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/backgammon.png",
+    "codes": "backgammon"
+  },
+  {
+    "name": "Play: Single Game",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "backgammon-play1"
+  },
+  {
+    "name": "Play: 3-Point",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "backgammon-play3"
+  },
+  {
+    "name": "Play: 5-Point",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "backgammon-play5"
+  },
+  
+  {
+    "name": "Renegade",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/renegade.png",
+    "codes": "renegade"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "renegade-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "renegade-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "renegade-fm-random"
+  },
+  
+  {
+    "name": "Chess",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/chess.png",
+    "codes": "chess"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "chess-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "chess-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "chess-fm-random"
+  },
+  
+  {
+    "name": "Shogi",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/shogi.png",
+    "codes": "shogi"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "shogi-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "shogi-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "shogi-fm-random"
+  },
+  {
+    "name": "Piece Design: Global",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "shogi-global"
+  },
+  {
+    "name": "Piece Design: Classic",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "shogi-classic"
+  },
+  
+  {
+    "name": "Mini Shogi",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/minishogi.png",
+    "codes": "minishogi"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "minishogi-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "minishogi-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "minishogi-fm-random"
+  },
+  {
+    "name": "Piece Design: Global",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "minishogi-global"
+  },
+  {
+    "name": "Piece Design: Classic",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "minishogi-classic"
+  },
+  
+  {
+    "name": "Hanafuda",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/hanafuda.png",
+    "codes": "hanafuda"
+  },
+  {
+    "name": "Start: 3-Round",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "hanafuda-3round"
+  },
+  {
+    "name": "Start: 6-Round",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "hanafuda-6round"
+  },
+  {
+    "name": "Start: 12-Round",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "hanafuda-12round"
+  },
+  {
+    "name": "Cherry-Blossing Viewing: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "hanafuda-cherry-on"
+  },
+  {
+    "name": "Cherry-Blossing Viewing: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "hanafuda-cherry-off"
+  },
+  {
+    "name": "Moon Viewing: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "hanafuda-moon-on"
+  },
+  {
+    "name": "Moon Viewing: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "hanafuda-moon-off"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "hanafuda-mario"
+  },
+  
+  {
+    "name": "Riichi Mahjong",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/riichi.png",
+    "codes": "riichi"
+  },
+  {
+    "name": "Play: East-Only",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "riichi-eastonly"
+  },
+  {
+    "name": "Play: East/South",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "riichi-eastsouth"
+  },
+  {
+    "name": "Red Dora: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "riichi-dora-on"
+  },
+  {
+    "name": "Red Dora: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "riichi-dora-off"
+  },
+  {
+    "name": "Tile Design: Global",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "riichi-global"
+  },
+  {
+    "name": "Tile Design: Classic",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "riichi-classic"
+  },
+  
+  {
+    "name": "Last Card",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/lastcard.png",
+    "codes": "lastcard"
+  },
+  {
+    "name": "Game Finish: 1st",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "lastcard-finish-first"
+  },
+  {
+    "name": "Game Finish: All",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "lastcard-finish-all"
+  },
+  
+  {
+    "name": "Blackjack",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/blackjack.png",
+    "codes": "blackjack"
+  },
+  {
+    "name": "Play: 5 Rounds",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "blackjack-5rounds"
+  },
+  {
+    "name": "Play: 10 Rounds",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "blackjack-10rounds"
+  },
+  {
+    "name": "Double Down: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "blackjack-doubledown-on"
+  },
+  {
+    "name": "Double Down: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "blackjack-doubledown-off"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "blackjack-mario"
+  },
+  
+  {
+    "name": "Texas Hold'em",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/holdem.png",
+    "codes": "holdem"
+  },
+  {
+    "name": "Play: 5 Rounds",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "holdem-5rounds"
+  },
+  {
+    "name": "Play: 10 Rounds",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "holdem-10rounds"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "holdem-mario"
+  },
+  
+  {
+    "name": "President",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/president.png",
+    "codes": "president"
+  },
+  {
+    "name": "Play: 5 Rounds",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "president-5rounds"
+  },
+  {
+    "name": "Play: 10 Rounds",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "president-10rounds"
+  },
+  {
+    "name": "8 Clear: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "president-8clear-on"
+  },
+  {
+    "name": "8 Clear: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "president-8clear-off"
+  },
+  {
+    "name": "3 of Spades Reversal: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "president-reversal-on"
+  },
+  {
+    "name": "3 of Spades Reversal: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "president-reversal-off"
+  },
+  {
+    "name": "Restrictions: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "president-restrictions-off"
+  },
+  {
+    "name": "Restrictions: 2 Cards",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "president-restrictions-2card"
+  },
+  {
+    "name": "Restrictions: 3 Cards",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "president-restrictions-3card"
+  },
+  {
+    "name": "Downfall: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "president-downfall-on"
+  },
+  {
+    "name": "Downfall: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "president-downfall-off"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "president-mario"
+  },
+  
+  {
+    "name": "Sevens",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/sevens.png",
+    "codes": "sevens"
+  },
+  {
+    "name": "Pass: 5 Times",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "sevens-pass-5"
+  },
+  {
+    "name": "Pass: 3 Times",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "sevens-pass-3"
+  },
+  {
+    "name": "Pass: 1 Time",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "sevens-pass-1"
+  },
+  {
+    "name": "Pass: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "sevens-pass-off"
+  },
+  {
+    "name": "Ace & King Connect: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "sevens-ak-off"
+  },
+  {
+    "name": "Ace & King Connect: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "sevens-ak-on"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "sevens-mario"
+  },
+  
+  {
+    "name": "Speed",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/speed.png",
+    "codes": "speed"
+  },
+  {
+    "name": "Joker: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "speed-joker-on"
+  },
+  {
+    "name": "Joker: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "speed-joker-off"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "speed-mario"
+  },
+  
+  {
+    "name": "Matching",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/matching.png",
+    "codes": "matching"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "matching-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "matching-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "matching-fm-random"
+  },
+  {
+    "name": "After Match: Flip Again",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "matching-match-again"
+  },
+  {
+    "name": "After Match: End Turn",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "matching-match-end"
+  },
+  {
+    "name": "Type of Match: 2 Cards",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "matching-type-2card"
+  },
+  {
+    "name": "Type of Match: 4 Cards",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "matching-type-4card"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "matching-mario"
+  },
+  
+  {
+    "name": "War",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/war.png",
+    "codes": "war"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "war-mario"
+  },
+  
+  {
+    "name": "Takoyaki",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/takoyaki.png",
+    "codes": "takoyaki"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "takoyaki-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "takoyaki-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "takoyaki-fm-random"
+  },
+  {
+    "name": "Jokers: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "takoyaki-jokers-on"
+  },
+  {
+    "name": "Jokers: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "takoyaki-jokers-off"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "takoyaki-mario"
+  },
+  
+  {
+    "name": "Pig's Tail",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/pigstail.png",
+    "codes": "pigstail"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "pigstail-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "pigstail-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "pigstail-fm-random"
+  },
+  {
+    "name": "Penalty Cards: Allowed",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "pigstail-penalty-on"
+  },
+  {
+    "name": "Penalty Cards: Forbidden",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "pigstail-penalty-off"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "pigstail-mario"
+  },
+  
+  {
+    "name": "Golf",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/golf.png",
+    "codes": "golf"
+  },
+  {
+    "name": "Starting Hole: 1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/1.png",
+    "codes": "golf-hole-1"
+  },
+  {
+    "name": "Starting Hole: 2",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/2.png",
+    "codes": "golf-hole-2"
+  },
+  {
+    "name": "Starting Hole: 3",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/3.png",
+    "codes": "golf-hole-3"
+  },
+  {
+    "name": "Starting Hole: 4",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/4.png",
+    "codes": "golf-hole-4"
+  },
+  {
+    "name": "Starting Hole: 5",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/5.png",
+    "codes": "golf-hole-5"
+  },
+  {
+    "name": "Starting Hole: 6",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/6.png",
+    "codes": "golf-hole-6"
+  },
+  {
+    "name": "Starting Hole: 7",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/7.png",
+    "codes": "golf-hole-7"
+  },
+  {
+    "name": "Starting Hole: 8",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/8.png",
+    "codes": "golf-hole-8"
+  },
+  {
+    "name": "Starting Hole: 9",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/9.png",
+    "codes": "golf-hole-9"
+  },
+  {
+    "name": "Starting Hole: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/questionmark.png",
+    "codes": "golf-hole-random"
+  },
+  
+  {
+    "name": "Billiards",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/billiards.png",
+    "codes": "billiards"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "billiards-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "billiards-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "billiards-fm-random"
+  },
+  {
+    "name": "Balls: No Numbers",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "billiards-numbers-off"
+  },
+  {
+    "name": "Balls: Numbers",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "billiards-numbers-on"
+  },
+  
+  {
+    "name": "Bowling",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/bowling.png",
+    "codes": "bowling"
+  },
+  {
+    "name": "Bumpers: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "bowling-bumpers-off"
+  },
+  {
+    "name": "Bumpers: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "bowling-bumpers-on"
+  },
+  
+  {
+    "name": "Darts",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/darts.png",
+    "codes": "darts"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "darts-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "darts-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "darts-fm-random"
+  },
+  {
+    "name": "Finish: Double Out",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "darts-double"
+  },
+  {
+    "name": "Finish: Open Out",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "darts-open"
+  },
+  
+  {
+    "name": "Carrom",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/carrom.png",
+    "codes": "carrom"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "carrom-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "carrom-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "carrom-fm-random"
+  },
+  
+  {
+    "name": "Toy Tennis",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/tennis.png",
+    "codes": "tennis"
+  },
+  {
+    "name": "Play: 1-Game",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "tennis-1game"
+  },
+  {
+    "name": "Play: 2-Game",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "tennis-2game"
+  },
+  {
+    "name": "Play: 3-Game",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "tennis-3game"
+  },
+  
+  {
+    "name": "Toy Soccer",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/soccer.png",
+    "codes": "soccer"
+  },
+  
+  {
+    "name": "Toy Curling",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/curling.png",
+    "codes": "curling"
+  },
+  {
+    "name": "First Move: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "curling-fm-p1"
+  },
+  {
+    "name": "First Move: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "curling-fm-cpu"
+  },
+  {
+    "name": "First Move: Random",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "curling-fm-random"
+  },
+  
+  {
+    "name": "Toy Boxing",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/boxing.png",
+    "codes": "boxing"
+  },
+  
+  {
+    "name": "Toy Baseball",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/baseball.png",
+    "codes": "baseball"
+  },
+  {
+    "name": "Play: 3 Innings",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "baseball-innings-3"
+  },
+  {
+    "name": "Play: 6 Innings",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "baseball-innings-6"
+  },
+  {
+    "name": "Play: 9 Innings",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "baseball-innings-9"
+  },
+  
+  {
+    "name": "Air Hockey",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/hockey.png",
+    "codes": "hockey"
+  },
+  {
+    "name": "Play: 5-Point",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "hockey-5point"
+  },
+  {
+    "name": "Play: 10-Point",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "hockey-10point"
+  },
+  
+  {
+    "name": "Slot Cars",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/slotcars.png",
+    "codes": "slotcars"
+  },
+  {
+    "name": "Play: Track 1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "slotcars-play-1"
+  },
+  {
+    "name": "Play: Track 2",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "slotcars-play-2"
+  },
+  {
+    "name": "Play: Track 3",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "slotcars-play-3"
+  },
+  {
+    "name": "Play: 3-Track Circuit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "slotcars-play-all"
+  },
+  
+  {
+    "name": "Fishing",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/fishing.png",
+    "codes": "fishing"
+  },
+  
+  {
+    "name": "Battle Tanks",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/battletanks.png",
+    "codes": "battletanks"
+  },
+  {
+    "name": "Play: Field 1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "battletanks-play-1"
+  },
+  {
+    "name": "Play: Field 2",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "battletanks-play-2"
+  },
+  {
+    "name": "Play: Field 3",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "battletanks-play-3"
+  },
+  
+  {
+    "name": "Team Tanks",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/teamtanks.png",
+    "codes": "teamtanks"
+  },
+  
+  {
+    "name": "Shooting Gallery",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/shootinggallery.png",
+    "codes": "shootinggallery"
+  },
+  
+  {
+    "name": "6-Ball Puzzle",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/6ballpuzzle.png",
+    "codes": "6ballpuzzle"
+  },
+  {
+    "name": "Handicap: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "6ballpuzzle-handi-off"
+  },
+  {
+    "name": "Handicap: P1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "6ballpuzzle-handi-p1"
+  },
+  {
+    "name": "Handicap: CPU",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "6ballpuzzle-handi-cpu"
+  },
+  {
+    "name": "Guide: On",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/left.png",
+    "codes": "6ballpuzzle-guide-on"
+  },
+  {
+    "name": "Guide: Off",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/right.png",
+    "codes": "6ballpuzzle-guide-off"
+  },
+  
+  {
+    "name": "Sliding Puzzle",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/slidingpuzzle.png",
+    "codes": "slidingpuzzle"
+  },
+  
+  {
+    "name": "Mahjong Solitaire",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/mahjong.png",
+    "codes": "mahjong"
+  },
+  
+  {
+    "name": "Klondike Solitaire",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/klondike.png",
+    "codes": "klondike"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "klondike-mario"
+  },
+  
+  {
+    "name": "Spider Solitaire",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/spider.png",
+    "codes": "spider"
+  },
+  {
+    "name": "Card Design: Mario",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/solo.png",
+    "codes": "spider-mario"
+  },
+  
+  {
+    "name": "Piano",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/piano.png",
+    "codes": "piano"
+  },
+  
+  {
+    "name": "",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/blank.png",
+    "codes": "blank"
+  },
+  
+  {
+    "name": "Games Available",
+    "type": "consumable",
+    "img": "images/available.png",
+    "codes": "available",
+    "initial_quantity": 0,
+    "min_quantity": 0,
+    "max_quantity": 51,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "allow_disabled": false
+  },
+  {
+    "name": "Games Completed",
+    "type": "consumable",
+    "img": "images/completed.png",
+    "codes": "completed",
+    "initial_quantity": 0,
+    "min_quantity": 0,
+    "max_quantity": 51,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "allow_disabled": false
+  },
+  {
+    "name": "Games Required",
+    "type": "consumable",
+    "img": "images/required.png",
+    "codes": "required",
+    "initial_quantity": 35,
+    "min_quantity": 0,
+    "max_quantity": 51,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "allow_disabled": false
+  },
+ ]

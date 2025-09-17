@@ -1,0 +1,273 @@
+-- this is an example/ default implementation for AP autotracking
+-- it will use the mappings defined in item_mapping.lua and location_mapping.lua to track items and locations via thier ids
+-- it will also load the AP slot data in the global SLOT_DATA, keep track of the current index of on_item messages in CUR_INDEX
+-- addition it will keep track of what items are local items and which one are remote using the globals LOCAL_ITEMS and GLOBAL_ITEMS
+-- this is useful since remote items will not reset but local items might
+ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/sectionID.lua")
+
+CUR_INDEX = -1
+SLOT_DATA = nil
+LOCAL_ITEMS = {}
+GLOBAL_ITEMS = {}
+GAMES = { "mancala", "dotsandboxes", "yacht", "fourinarow", "hitandblow", "ninemensmorris", "hex", 
+            "checkers", "hareandhounds", "gomoku", "dominoes", "chinesecheckers", "ludo", "backgammon", 
+            "renegade", "chess", "shogi", "minishogi", "hanafuda", "riichi", "lastcard", 
+            "blackjack", "holdem", "president", "sevens", "speed", "matching", "war", 
+            "takoyaki", "pigstail", "golf", "billiards", "bowling", "darts", "carrom", 
+            "tennis", "soccer", "curling", "boxing", "baseball", "hockey", "slotcars", 
+            "fishing", "battletanks", "teamtanks", "shootinggallery", "6ballpuzzle", "slidingpuzzle", "mahjong",
+            "klondike", "spider" }
+LOCATION_NAMES = { "Mancala", "Dots", "Yacht", "Four", "Hit", "Morris", "Hex", 
+            "Checkers", "Hare", "Gomoku", "Dominoes", "Chinese", "Ludo", "Backgammon", 
+            "Renegade", "Chess", "Mini", "Shogi", "Hanafuda", "Riichi", "Last", 
+            "Blackjack", "Texas", "President", "Sevens", "Speed", "Matching", "War", 
+            "Takoyaki", "Pig", "Golf", "Billiards", "Bowling", "Darts", "Carrom", 
+            "Tennis", "Soccer", "Curling", "Boxing", "Baseball", "Hockey", "Slot", 
+            "Fishing", "Battle", "Team", "Shooting", "Ball", "Sliding", "Mahjong Solitaire",
+            "Klondike", "Spider" }
+COMPLETED = { false, false, false, false, false, false, false, 
+                false, false, false, false, false, false, false, 
+                false, false, false, false, false, false, false, 
+                false, false, false, false, false, false, false, 
+                false, false, false, false, false, false, false, 
+                false, false, false, false, false, false, false, 
+                false, false, false, false, false, false, false, 
+                false, false }
+
+function onClear(slot_data)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
+    end
+    SLOT_DATA = slot_data
+    CUR_INDEX = -1
+    
+    -- reset locations
+    for _, v in pairs(LOCATION_MAPPING) do
+        if v[1] then
+            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onClear: clearing location %s", v[1]))
+            end
+            local obj = Tracker:FindObjectForCode(v[1])
+            if obj then
+                if v[1]:sub(1, 1) == "@" then
+                    obj.AvailableChestCount = obj.ChestCount
+                else
+                    obj.Active = false
+                end
+            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onClear: could not find object for code %s", v[1]))
+            end
+        end
+    end
+    -- reset items
+    for _, v in pairs(ITEM_MAPPING) do
+        if v[1] and v[2] then
+            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onClear: clearing item %s of type %s", v[1], v[2]))
+            end
+            local obj = Tracker:FindObjectForCode(v[1])
+            if obj then
+                if v[2] == "toggle" then
+                    obj.Active = false
+                elseif v[2] == "progressive" then
+                    obj.CurrentStage = 0
+                    obj.Active = false
+                elseif v[2] == "consumable" then
+                    if v[1] == "required" then
+                        obj.AcquiredCount = 35
+                    else
+                        obj.AcquiredCount = 0
+                    end
+                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                    print(string.format("onClear: unknown item type %s for code %s", v[2], v[1]))
+                end
+            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onClear: could not find object for code %s", v[1]))
+            end
+        end
+    end
+
+    print(dump_table(slot_data))
+    
+    LOCAL_ITEMS = {}
+    GLOBAL_ITEMS = {}
+    -- manually run snes interface functions after onClear in case we are already ingame
+    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
+        -- add snes interface functions here
+    end
+end
+
+-- called when an item gets collected
+function onItem(index, item_id, item_name, player_number)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
+    end
+    if index <= CUR_INDEX then
+        return
+    end
+    local is_local = player_number == Archipelago.PlayerNumber
+    CUR_INDEX = index;
+    local v = ITEM_MAPPING[item_id]
+    if not v then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onItem: could not find item mapping for id %s", item_id))
+        end
+        return
+    end
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("onItem: code: %s, type %s", v[1], v[2]))
+    end
+    if not v[1] then
+        return
+    end
+    local obj = Tracker:FindObjectForCode(v[1])
+    if obj then
+        for i, j in ipairs(GAMES) do
+            if j == v[1] then
+                local avail = Tracker:FindObjectForCode("available")
+                avail.AcquiredCount = avail.AcquiredCount + avail.Increment
+                break
+            end
+        end
+        if v[2] == "toggle" then
+            obj.Active = true
+        elseif v[2] == "progressive" then
+            if obj.Active then
+                obj.CurrentStage = obj.CurrentStage + 1
+            else
+                obj.Active = true
+            end
+        elseif v[2] == "consumable" then
+            obj.AcquiredCount = obj.AcquiredCount + obj.Increment
+        elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
+        end
+    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("onItem: could not find object for code %s", v[1]))
+    end
+    -- track local items via snes interface
+    if is_local then
+        if LOCAL_ITEMS[v[1]] then
+            LOCAL_ITEMS[v[1]] = LOCAL_ITEMS[v[1]] + 1
+        else
+            LOCAL_ITEMS[v[1]] = 1
+        end
+    else
+        if GLOBAL_ITEMS[v[1]] then
+            GLOBAL_ITEMS[v[1]] = GLOBAL_ITEMS[v[1]] + 1
+        else
+            GLOBAL_ITEMS[v[1]] = 1
+        end
+    end
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
+        print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
+    end
+    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
+        -- add snes interface functions here for local item tracking
+    end
+end
+
+-- called when a location gets cleared
+function onLocation(location_id, location_name)
+    local location_array = LOCATION_MAPPING[location_id]
+    if not location_array or not location_array[1] then
+        print(string.format("onLocation: could not find location mapping for id %s", location_id))
+        return
+    end
+
+    for _, location in pairs(location_array) do
+        local obj = Tracker:FindObjectForCode(location)
+        if obj then
+            if location:sub(1, 1) == "@" then
+                obj.AvailableChestCount = obj.AvailableChestCount - 1
+            else
+                obj.Active = true
+            end
+        else
+            print(string.format("onLocation: could not find object for code %s", location))
+        end
+    end
+end
+
+-- called when a locations is scouted
+function onScout(location_id, location_name, item_id, item_name, item_player)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onScout: %s, %s, %s, %s, %s", location_id, location_name, item_id, item_name,
+            item_player))
+    end
+    -- not implemented yet :(
+end
+
+-- called when a bounce message is received 
+function onBounce(json)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onBounce: %s", dump_table(json)))
+    end
+    -- your code goes here
+end
+
+ScriptHost:AddOnLocationSectionChangedHandler("manual", function(section)
+    local sectionID = section.FullID
+    if sectionID == "Victory" and section.AvailableChestCount == 0 then
+        local res = Archipelago:StatusUpdate(Archipelago.ClientStatus.GOAL)
+        if res then
+            print("Sent Victory")
+            local obj = Tracker:FindObjectForCode("complete")
+            obj.Active = true
+        else
+            print("Error sending Victory")
+        end
+    elseif sectionID == "Release/Release/Click Here To !release Game" and section.AvailableChestCount == 0 then
+        for _, apID in pairs(sectionIDToAPID) do
+            if apID ~= nil then
+                local res = Archipelago:LocationChecks({apID})
+                if res then
+                    print("Sent " .. tostring(apID) .. " for " .. tostring(sectionID))
+                else
+                    print("Error sending " .. tostring(apID) .. " for " .. tostring(sectionID))
+                end
+            else
+                print(tostring(sectionID) .. " is not an AP location")
+            end
+        end
+    elseif (section.AvailableChestCount == 0) then  -- this only works for 1 chest per section
+        -- AP location cleared
+        local sectionID = section.FullID
+        local apID = sectionIDToAPID[sectionID]
+        for i, j in ipairs(LOCATION_NAMES) do
+            if string.find(tostring(sectionID), j) ~= nil then
+                COMPLETED[i] = true
+                local complete = Tracker:FindObjectForCode("completed")
+                local completed = 0
+                for i = 1, 51, 1 do
+                    if COMPLETED[i] then
+                        completed =  completed + 1
+                    end
+                end   
+                complete.AcquiredCount = completed
+                break
+            end
+        end
+        if apID ~= nil then
+            local res = Archipelago:LocationChecks({apID})
+            if res then
+                print("Sent " .. tostring(apID) .. " for " .. tostring(sectionID))
+            else
+                print("Error sending " .. tostring(apID) .. " for " .. tostring(sectionID))
+            end
+        else
+            print(tostring(sectionID) .. " is not an AP location")
+        end
+    end
+end)
+
+-- add AP callbacks
+-- un-/comment as needed
+Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddItemHandler("item handler", onItem)
+Archipelago:AddLocationHandler("location handler", onLocation)
+-- Archipelago:AddScoutHandler("scout handler", onScout)
+-- Archipelago:AddBouncedHandler("bounce handler", onBounce)

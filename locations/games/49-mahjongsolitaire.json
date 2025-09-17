@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Mahjong Solitaire",
+    "sections": [
+      {
+        "name": "Clear 1 Beginner Stage",
+        "access_rules": [
+          "mahjong"
+        ]
+      },
+      {
+        "name": "Clear 1 Standard Stage",
+        "access_rules": [
+          "mahjong"
+        ]
+      },
+      {
+        "name": "Clear 1 Advanced Stage",
+        "access_rules": [
+          "mahjong"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mahjong Solitaire",
+	"sections": [
+	  {
+		"name": "Clear 1 Beginner Stage",
+		"ref": "Mahjong Solitaire/Clear 1 Beginner Stage"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 910,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "Mahjong Solitaire",
+	"sections": [
+	  {
+		"name": "Clear 1 Standard Stage",
+		"ref": "Mahjong Solitaire/Clear 1 Standard Stage"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 950,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "Mahjong Solitaire",
+	"sections": [
+	  {
+		"name": "Clear 1 Advanced Stage",
+		"ref": "Mahjong Solitaire/Clear 1 Advanced Stage"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 990,
+		"y": 780
+	  }
+	]
+  }
+]

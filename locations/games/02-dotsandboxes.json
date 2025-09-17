@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Dots and Boxes",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "dotsandboxes"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "dotsandboxes"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "dotsandboxes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dots and Boxes",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Dots and Boxes/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 560,
+		"y": 160
+	  }
+	]
+  },
+  {
+    "name": "Dots and Boxes",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Dots and Boxes/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 600,
+		"y": 160
+	  }
+	]
+  },
+  {
+    "name": "Dots and Boxes",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Dots and Boxes/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 640,
+		"y": 160
+	  }
+	]
+  }
+]

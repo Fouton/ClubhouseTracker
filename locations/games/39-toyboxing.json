@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Toy Boxing",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "boxing"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "boxing"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "boxing"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Toy Boxing",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Toy Boxing/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 735,
+		"y": 640
+	  }
+	]
+  },
+  {
+    "name": "Toy Boxing",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Toy Boxing/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 775,
+		"y": 640
+	  }
+	]
+  },
+  {
+    "name": "Toy Boxing",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Toy Boxing/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 815,
+		"y": 640
+	  }
+	]
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Slot Cars",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "slotcars"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "slotcars"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "slotcars"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Slot Cars",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Slot Cars/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1254,
+		"y": 640
+	  }
+	]
+  },
+  {
+    "name": "Slot Cars",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Slot Cars/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1294,
+		"y": 640
+	  }
+	]
+  },
+  {
+    "name": "Slot Cars",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Slot Cars/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1334,
+		"y": 640
+	  }
+	]
+  }
+]

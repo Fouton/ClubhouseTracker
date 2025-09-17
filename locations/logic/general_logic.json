@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Release",
+    "children": [
+      {
+        "name": "Release",
+        "visibility_rules": [
+          "release"
+        ],
+        "access_rules": [
+          "complete"
+        ],
+        "sections": [
+          {
+            "name": "Click Here To !release Game"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "board",
+            "x": 1,
+            "y": 1
+          }
+        ]
+      }
+    ]
+  }
+]

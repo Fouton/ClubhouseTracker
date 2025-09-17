@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Riichi Mahjong",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "riichi"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "riichi"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "riichi"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Riichi Mahjong",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "Riichi Mahjong/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 560,
+		"y": 400
+	  }
+	]
+  },
+  {
+    "name": "Riichi Mahjong",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "Riichi Mahjong/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 600,
+		"y": 400
+	  }
+	]
+  },
+  {
+    "name": "Riichi Mahjong",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "Riichi Mahjong/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 640,
+		"y": 400
+	  }
+	]
+  }
+]

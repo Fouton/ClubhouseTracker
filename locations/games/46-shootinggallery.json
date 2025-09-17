@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Shooting Gallery",
+    "sections": [
+      {
+        "name": "100 Points",
+        "access_rules": [
+          "shootinggallery"
+        ]
+      }
+    ],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 425,
+		"y": 780
+	  }
+	]
+  }
+]

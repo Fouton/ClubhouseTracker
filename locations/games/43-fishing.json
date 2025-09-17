@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Fishing",
+    "sections": [
+      {
+        "name": "2000g in 3 Minutes",
+        "access_rules": [
+          "fishing"
+        ]
+      }
+    ],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 1464,
+		"y": 640
+	  }
+	]
+  }
+]

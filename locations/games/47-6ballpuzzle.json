@@ -1,0 +1,73 @@
+[
+  {
+    "name": "6-Ball Puzzle",
+    "sections": [
+      {
+        "name": "Defeat Normal CPU",
+        "access_rules": [
+          "6ballpuzzle"
+        ]
+      },
+      {
+        "name": "Defeat Hard CPU",
+        "access_rules": [
+          "6ballpuzzle"
+        ]
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "access_rules": [
+          "6ballpuzzle"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "6-Ball Puzzle",
+	"sections": [
+	  {
+		"name": "Defeat Normal CPU",
+		"ref": "6-Ball Puzzle/Defeat Normal CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 560,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "6-Ball Puzzle",
+	"sections": [
+	  {
+		"name": "Defeat Hard CPU",
+		"ref": "6-Ball Puzzle/Defeat Hard CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 600,
+		"y": 780
+	  }
+	]
+  },
+  {
+    "name": "6-Ball Puzzle",
+	"sections": [
+	  {
+		"name": "Defeat Amazing CPU",
+		"ref": "6-Ball Puzzle/Defeat Amazing CPU"
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "board",
+		"x": 640,
+		"y": 780
+	  }
+	]
+  }
+]
