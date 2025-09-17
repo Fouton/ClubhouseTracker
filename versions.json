@@ -1,0 +1,14 @@
+{
+	"versions": [
+		{
+			"package_version": "1.0.0.0",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.0/ClubhouseTracker.zip",
+			"sha256": "b00dc6777355e2b5f226e26e4061e1f840205d027d2277b7af86dc711ccbdb7a",
+			"changelog": [
+				"Fully Functioning AP Manual Tracker. No settings or Broadcast Display yet."
+			]
+		}
+	]
+}
+
+
