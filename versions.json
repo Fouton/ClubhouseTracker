@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.0.2",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.2/ClubhouseTracker.zip",
+			"sha256": "sha256:08cc63dd15ec12bdc9a006cf208864bd22501b7fb89a395751d3d29a48bbbb52",
+			"changelog": [
+				"Fixed Dominoes - No Playable Tile to properly display three settings options."
+			]
+		},
+		{
 			"package_version": "1.0.0.1",
 			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/v1.0.0.1/ClubhouseTracker.zip",
 			"sha256": "da454a31895eb63c5d658e02c771b4f76f97c33ff91f9e1e41193f536bde4404",
@@ -18,6 +26,7 @@
 		}
 	]
 }
+
 
 
 
