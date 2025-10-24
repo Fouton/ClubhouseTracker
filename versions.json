@@ -1,9 +1,9 @@
 {
 	"versions": [
 		{
-			"package_version": "1.0.0.3",
-			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.3/ClubhouseTracker.zip",
-			"sha256": "sha256:b3ac9a34a7da5c06132643e4a0eee3b443f16a061c9b092140a0ef17fefab9a1",
+			"package_version": "1.0.0.4",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.4/ClubhouseTracker.zip",
+			"sha256": "sha256:6bf0d9813e262968b24362c305bf8328a19b34a389460ad7df328e6860dd9983",
 			"changelog": [
 				"New AP Manual YAML settings autotrack. Each game locations combined to one square."
 			]
@@ -34,6 +34,7 @@
 		}
 	]
 }
+
 
 
 
