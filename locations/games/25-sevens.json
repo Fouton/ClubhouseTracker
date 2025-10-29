@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "sevens"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "sevens"
         ]
       }
-    ]
-  },
-  {
-    "name": "Sevens",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Sevens/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1428,
-		"y": 400
-	  }
-	]
-  },
-  {
-    "name": "Sevens",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Sevens/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 1468,
-		"y": 400
-	  }
-	]
-  },
-  {
-    "name": "Sevens",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Sevens/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1508,
 		"y": 400
 	  }
 	]

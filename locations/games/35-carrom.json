@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "carrom"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "carrom"
         ]
       }
-    ]
-  },
-  {
-    "name": "Carrom",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Carrom/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 35,
-		"y": 640
-	  }
-	]
-  },
-  {
-    "name": "Carrom",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Carrom/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 75,
-		"y": 640
-	  }
-	]
-  },
-  {
-    "name": "Carrom",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Carrom/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 115,
 		"y": 640
 	  }
 	]

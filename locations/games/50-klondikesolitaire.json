@@ -14,36 +14,11 @@
           "klondike"
         ]
       }
-    ]
-  },
-  {
-    "name": "Klondike Solitaire",
-	"sections": [
-	  {
-		"name": "Clear with Draw 1",
-		"ref": "Klondike Solitaire/Clear with Draw 1"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
-		"x": 1105,
-		"y": 780
-	  }
-	]
-  },
-  {
-    "name": "Klondike Solitaire",
-	"sections": [
-	  {
-		"name": "Clear with Draw 3",
-		"ref": "Klondike Solitaire/Clear with Draw 3"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1145,
+		"x": 1125,
 		"y": 780
 	  }
 	]

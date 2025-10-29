@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "minishogi"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "minishogi"
         ]
       }
-    ]
-  },
-  {
-    "name": "Mini Shogi",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Mini Shogi/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 210,
-		"y": 400
-	  }
-	]
-  },
-  {
-    "name": "Mini Shogi",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Mini Shogi/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 250,
-		"y": 400
-	  }
-	]
-  },
-  {
-    "name": "Mini Shogi",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Mini Shogi/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 290,
 		"y": 400
 	  }
 	]

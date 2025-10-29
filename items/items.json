@@ -318,14 +318,21 @@
     "codes": "dominoes-61"
   },
   {
-    "name": "Draw 1",
+    "name": "Keep Drawing",
     "type": "toggle",
     "loop": "true",
     "img": "images/left.png",
-    "codes": "dominoes-draw"
+    "codes": "dominoes-keep-draw"
   },
   {
-    "name": "Pass",
+    "name": "Draw 1",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/middle.png",
+    "codes": "dominoes-draw-1"
+  },
+  {
+    "name": "Pass Without Draw",
     "type": "toggle",
     "loop": "true",
     "img": "images/right.png",

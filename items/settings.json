@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Show AP Buttons",
+    "type": "toggle",
+    "img": "images/AP.png",
+    "codes": "extras"
+  },
+  {
+    "name": "Amazing CPUs",
+    "type": "toggle",
+    "img": "images/Amazing.png",
+    "codes": "amazing"
+  },
+  {
+    "name": "Impossible CPUs",
+    "type": "toggle",
+    "img": "images/Impossible.png",
+    "codes": "impossible"
+  },
+  {
+    "name": "Complete",
+    "type": "toggle",
+    "codes": "complete"
+  }
+]

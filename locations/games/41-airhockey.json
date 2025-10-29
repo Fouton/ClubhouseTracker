@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "hockey"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "hockey"
         ]
       }
-    ]
-  },
-  {
-    "name": "Air Hockey",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Air Hockey/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1085,
-		"y": 640
-	  }
-	]
-  },
-  {
-    "name": "Air Hockey",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Air Hockey/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 1125,
-		"y": 640
-	  }
-	]
-  },
-  {
-    "name": "Air Hockey",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Air Hockey/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1165,
 		"y": 640
 	  }
 	]

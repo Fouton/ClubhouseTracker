@@ -20,52 +20,11 @@
           "darts"
         ]
       }
-    ]
-  },
-  {
-    "name": "Darts",
-	"sections": [
-	  {
-		"name": "Win at Count Up",
-		"ref": "Darts/Win at Count Up"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1428,
-		"y": 520
-	  }
-	]
-  },
-  {
-    "name": "Darts",
-	"sections": [
-	  {
-		"name": "Win at 301",
-		"ref": "Darts/Win at 301"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 1468,
-		"y": 520
-	  }
-	]
-  },
-  {
-    "name": "Darts",
-	"sections": [
-	  {
-		"name": "Win at 501",
-		"ref": "Darts/Win at 501"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1508,
 		"y": 520
 	  }
 	]

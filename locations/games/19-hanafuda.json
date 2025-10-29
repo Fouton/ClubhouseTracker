@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "hanafuda"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "hanafuda"
         ]
       }
-    ]
-  },
-  {
-    "name": "Hanafuda",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Hanafuda/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 385,
-		"y": 400
-	  }
-	]
-  },
-  {
-    "name": "Hanafuda",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Hanafuda/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 425,
-		"y": 400
-	  }
-	]
-  },
-  {
-    "name": "Hanafuda",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Hanafuda/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 465,
 		"y": 400
 	  }
 	]

@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "checkers"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "checkers"
         ]
       }
-    ]
-  },
-  {
-    "name": "Checkers",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Checkers/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 35,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Checkers",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Checkers/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 75,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Checkers",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Checkers/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 115,
 		"y": 285
 	  }
 	]

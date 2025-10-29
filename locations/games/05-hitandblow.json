@@ -14,36 +14,11 @@
           "hitandblow"
         ]
       }
-    ]
-  },
-  {
-    "name": "Hit and Blow",
-	"sections": [
-	  {
-		"name": "Win with Duplicate Colors",
-		"ref": "Hit and Blow/Win with Duplicate Colors"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
-		"x": 1105,
-		"y": 160
-	  }
-	]
-  },
-  {
-    "name": "Hit and Blow",
-	"sections": [
-	  {
-		"name": "Win without Duplicate Colors",
-		"ref": "Hit and Blow/Win without Duplicate Colors"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1145,
+		"x": 1125,
 		"y": 160
 	  }
 	]

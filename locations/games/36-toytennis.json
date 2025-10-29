@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "tennis"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "tennis"
         ]
       }
-    ]
-  },
-  {
-    "name": "Toy Tennis",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Toy Tennis/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 210,
-		"y": 640
-	  }
-	]
-  },
-  {
-    "name": "Toy Tennis",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Toy Tennis/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 250,
-		"y": 640
-	  }
-	]
-  },
-  {
-    "name": "Toy Tennis",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Toy Tennis/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 290,
 		"y": 640
 	  }
 	]

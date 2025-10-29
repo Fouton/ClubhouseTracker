@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "chess"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "chess"
         ]
       }
-    ]
-  },
-  {
-    "name": "Chess",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Chess/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1428,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Chess",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Chess/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 1468,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Chess",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Chess/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1508,
 		"y": 285
 	  }
 	]

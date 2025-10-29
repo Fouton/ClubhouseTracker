@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "chinesecheckers"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "chinesecheckers"
         ]
       }
-    ]
-  },
-  {
-    "name": "Chinese Checkers",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Chinese Checkers/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 735,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Chinese Checkers",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Chinese Checkers/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 775,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Chinese Checkers",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Chinese Checkers/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 815,
 		"y": 285
 	  }
 	]

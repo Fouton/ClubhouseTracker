@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "hex"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "hex"
         ]
       }
-    ]
-  },
-  {
-    "name": "Hex",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Hex/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1428,
-		"y": 160
-	  }
-	]
-  },
-  {
-    "name": "Hex",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Hex/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 1468,
-		"y": 160
-	  }
-	]
-  },
-  {
-    "name": "Hex",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Hex/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1508,
 		"y": 160
 	  }
 	]

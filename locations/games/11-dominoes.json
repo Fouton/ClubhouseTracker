@@ -14,36 +14,11 @@
           "dominoes"
         ]
       }
-    ]
-  },
-  {
-    "name": "Dominoes",
-	"sections": [
-	  {
-		"name": "Win at Five-Up",
-		"ref": "Dominoes/Win at Five-Up"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
-		"x": 580,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Dominoes",
-	"sections": [
-	  {
-		"name": "Win with Simple Rules",
-		"ref": "Dominoes/Win with Simple Rules"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 620,
+		"x": 600,
 		"y": 285
 	  }
 	]

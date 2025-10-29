@@ -14,36 +14,11 @@
           "slidingpuzzle"
         ]
       }
-    ]
-  },
-  {
-    "name": "Sliding Puzzle",
-	"sections": [
-	  {
-		"name": "300 Points with Turtle",
-		"ref": "Sliding Puzzle/300 Points with Turtle"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
-		"x": 755,
-		"y": 780
-	  }
-	]
-  },
-  {
-    "name": "Sliding Puzzle",
-	"sections": [
-	  {
-		"name": "300 Points with Rabbit",
-		"ref": "Sliding Puzzle/300 Points with Rabbit"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 795,
+		"x": 775,
 		"y": 780
 	  }
 	]

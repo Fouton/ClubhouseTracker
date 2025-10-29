@@ -5,7 +5,7 @@
       {
         "name": "Release",
         "visibility_rules": [
-          "release"
+          "extras"
         ],
         "access_rules": [
           "complete"
@@ -18,8 +18,34 @@
         "map_locations": [
           {
             "map": "board",
-            "x": 1,
-            "y": 1
+            "x": 115,
+            "y": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Victory",
+    "children": [
+      {
+        "name": "Victory",
+        "visibility_rules": [
+          "extras"
+        ],
+        "access_rules": [
+          "complete"
+        ],
+        "sections": [
+          {
+            "name": "Click to Complete Goal"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "board",
+            "x": 55,
+            "y": 50
           }
         ]
       }

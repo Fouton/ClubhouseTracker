@@ -1,7 +1,7 @@
 ﻿{
   "name": "Clubhouse Games Manual Tracker",
   "game_name": "Manual_ClubhouseGames51_Buck",
-  "package_version": "1.0.0.0",
+  "package_version": "1.0.0.5",
   "min_poptracker_version": "0.28.0",
   "package_uid": "clubhousetracker",
   "author": "Fouton",

@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "baseball"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "baseball"
         ]
       }
-    ]
-  },
-  {
-    "name": "Toy Baseball",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Toy Baseball/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 910,
-		"y": 640
-	  }
-	]
-  },
-  {
-    "name": "Toy Baseball",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Toy Baseball/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 950,
-		"y": 640
-	  }
-	]
-  },
-  {
-    "name": "Toy Baseball",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Toy Baseball/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 990,
 		"y": 640
 	  }
 	]

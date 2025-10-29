@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "hareandhounds"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "hareandhounds"
         ]
       }
-    ]
-  },
-  {
-    "name": "Hare and Hounds",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Hare and Hounds/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 210,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Hare and Hounds",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Hare and Hounds/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 250,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Hare and Hounds",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Hare and Hounds/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 290,
 		"y": 285
 	  }
 	]

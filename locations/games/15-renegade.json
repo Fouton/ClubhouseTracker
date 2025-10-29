@@ -16,56 +16,27 @@
       },
       {
         "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ],
+        "access_rules": [
+          "renegade"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ],
         "access_rules": [
           "renegade"
         ]
       }
-    ]
-  },
-  {
-    "name": "Renegade",
-	"sections": [
-	  {
-		"name": "Defeat Normal CPU",
-		"ref": "Renegade/Defeat Normal CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1254,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Renegade",
-	"sections": [
-	  {
-		"name": "Defeat Hard CPU",
-		"ref": "Renegade/Defeat Hard CPU"
-	  }
-	],
+    ],
 	"map_locations": [
 	  {
 		"map": "board",
 		"x": 1294,
-		"y": 285
-	  }
-	]
-  },
-  {
-    "name": "Renegade",
-	"sections": [
-	  {
-		"name": "Defeat Amazing CPU",
-		"ref": "Renegade/Defeat Amazing CPU"
-	  }
-	],
-	"map_locations": [
-	  {
-		"map": "board",
-		"x": 1334,
 		"y": 285
 	  }
 	]

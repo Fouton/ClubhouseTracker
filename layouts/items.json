@@ -240,7 +240,7 @@
 			"item_height": 8,
 			"item_margin": "1,1",
 			"rows": [
-			  [ "dominoes-draw", "dominoes-pass" ],
+			  [ "dominoes-keep-draw", "dominoes-draw-1", "dominoes-pass" ],
 			  [],
 			  [],
 			  [ "blank", "blank", "blank", "blank" ],
@@ -931,5 +931,22 @@
 		]
 	  }
 	]
+  },
+  "settings_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 1",
+        "item_size": 54,
+        "margin": "0,0",
+        "h_alignment": "left",
+        "rows": [
+          ["amazing", "impossible", "extras"]
+        ]
+      }
+    ]
   }
 }

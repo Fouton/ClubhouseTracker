@@ -27,14 +27,24 @@ LOCATION_NAMES = { "Mancala", "Dots", "Yacht", "Four", "Hit", "Morris", "Hex",
             "Tennis", "Soccer", "Curling", "Boxing", "Baseball", "Hockey", "Slot", 
             "Fishing", "Battle", "Team", "Shooting", "Ball", "Sliding", "Mahjong Solitaire",
             "Klondike", "Spider" }
-COMPLETED = { false, false, false, false, false, false, false, 
-                false, false, false, false, false, false, false, 
-                false, false, false, false, false, false, false, 
-                false, false, false, false, false, false, false, 
-                false, false, false, false, false, false, false, 
-                false, false, false, false, false, false, false, 
-                false, false, false, false, false, false, false, 
-                false, false }
+COMPLETED = {}
+BLOCK_COLLECT = {}
+
+--for i = 1, 51, 1 do
+--    COMPLETED[i] = 0
+--    BLOCK_COLLECT[i] = 0
+--end
+
+function updateCompletedCount()
+    local complete = Tracker:FindObjectForCode("completed")
+    local completed = 0
+    for i = 1, 51, 1 do
+        if COMPLETED[i] > BLOCK_COLLECT[i] then
+            completed =  completed + 1
+        end
+    end   
+    complete.AcquiredCount = completed
+end
 
 function onClear(slot_data)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -42,6 +52,11 @@ function onClear(slot_data)
     end
     SLOT_DATA = slot_data
     CUR_INDEX = -1
+
+    for i = 1, 51, 1 do
+        COMPLETED[i] = 0
+        BLOCK_COLLECT[i] = 0
+    end
     
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
@@ -89,7 +104,27 @@ function onClear(slot_data)
         end
     end
 
+    local obj = Tracker:FindObjectForCode('impossible')
+    if slot_data['impossible_cpus'] == 1 then
+        obj.Active = true
+    else
+        obj.Active = false
+    end
+    
+    local obj = Tracker:FindObjectForCode('amazing')
+    if slot_data['amazing_cpus'] == 1 then
+        obj.Active = true
+    else
+        obj.Active = false
+    end
+    
+    local obj = Tracker:FindObjectForCode('required')
+    if slot_data['games_required_for_victory'] then
+        obj.AcquiredCount = slot_data['games_required_for_victory']
+    end
+    
     print(dump_table(slot_data))
+
     
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
@@ -124,15 +159,18 @@ function onItem(index, item_id, item_name, player_number)
     end
     local obj = Tracker:FindObjectForCode(v[1])
     if obj then
-        for i, j in ipairs(GAMES) do
-            if j == v[1] then
-                local avail = Tracker:FindObjectForCode("available")
-                avail.AcquiredCount = avail.AcquiredCount + avail.Increment
-                break
-            end
-        end
         if v[2] == "toggle" then
             obj.Active = true
+
+            local avail = 0
+            for i, j in ipairs(GAMES) do
+                local gameobj = Tracker:FindObjectForCode(j)
+                if gameobj and gameobj.Active then
+                    avail = avail + 1
+                end
+            end
+            local available = Tracker:FindObjectForCode("available")
+            available.AcquiredCount = avail
         elseif v[2] == "progressive" then
             if obj.Active then
                 obj.CurrentStage = obj.CurrentStage + 1
@@ -183,6 +221,15 @@ function onLocation(location_id, location_name)
         if obj then
             if location:sub(1, 1) == "@" then
                 obj.AvailableChestCount = obj.AvailableChestCount - 1
+                for i, j in ipairs(LOCATION_NAMES) do
+                    if string.find(tostring(location_name), j) ~= nil and not(j == "Checkers" and string.find(tostring(location_name), "Chinese") ~= nil) then
+                        print("Stop " .. i .. " aka " .. j .. " from completing")
+                        BLOCK_COLLECT[i] = BLOCK_COLLECT[i] + 1
+                        updateCompletedCount()
+                        break
+                    end
+                end
+
             else
                 obj.Active = true
             end
@@ -211,7 +258,7 @@ end
 
 ScriptHost:AddOnLocationSectionChangedHandler("manual", function(section)
     local sectionID = section.FullID
-    if sectionID == "Victory" and section.AvailableChestCount == 0 then
+    if sectionID == "Victory/Victory/Click to Complete Goal" and section.AvailableChestCount == 0 then
         local res = Archipelago:StatusUpdate(Archipelago.ClientStatus.GOAL)
         if res then
             print("Sent Victory")
@@ -238,16 +285,10 @@ ScriptHost:AddOnLocationSectionChangedHandler("manual", function(section)
         local sectionID = section.FullID
         local apID = sectionIDToAPID[sectionID]
         for i, j in ipairs(LOCATION_NAMES) do
-            if string.find(tostring(sectionID), j) ~= nil then
-                COMPLETED[i] = true
-                local complete = Tracker:FindObjectForCode("completed")
-                local completed = 0
-                for i = 1, 51, 1 do
-                    if COMPLETED[i] then
-                        completed =  completed + 1
-                    end
-                end   
-                complete.AcquiredCount = completed
+            if string.find(tostring(sectionID), j) ~= nil and not(j == "Checkers" and string.find(tostring(sectionID), "Chinese") ~= nil) then
+                print("Checked Location " .. j)
+                COMPLETED[i] = COMPLETED[i] + 1
+                updateCompletedCount()
                 break
             end
         end
