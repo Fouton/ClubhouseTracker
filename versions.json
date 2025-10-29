@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.0.5",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.5/ClubhouseTracker.zip",
+			"sha256": "sha256:d3bb2fc0fff733a59a440ab6170dd29aec155f2dd4a2f530b99cf0a328065f13",
+			"changelog": [
+				"Fixed Autotracking Completed Games when another player uses !collect."
+			]
+		},
+		{
 			"package_version": "1.0.0.4",
 			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.4/ClubhouseTracker.zip",
 			"sha256": "sha256:6bf0d9813e262968b24362c305bf8328a19b34a389460ad7df328e6860dd9983",
@@ -34,6 +42,7 @@
 		}
 	]
 }
+
 
 
 
