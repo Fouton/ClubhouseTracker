@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.0.6",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.6/ClubhouseTracker.zip",
+			"sha256": "b74741a4244337cb3fd596acaa866a816c9d36b760efa255531dd431be4f855d",
+			"changelog": [
+				"Fixed Hit and Blow location IDs for autotacking & check sending."
+			]
+		},
+		{
 			"package_version": "1.0.0.5",
 			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.5/ClubhouseTracker.zip",
 			"sha256": "d3bb2fc0fff733a59a440ab6170dd29aec155f2dd4a2f530b99cf0a328065f13",
