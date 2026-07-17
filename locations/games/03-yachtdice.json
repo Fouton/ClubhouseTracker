@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Yacht Dice",
+    "access_rules": [
+      "^$yacht"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat CPU"
+      },
+      {
+        "name": "100 Points",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "125 Points",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      },
+      {
+        "name": "150 Points",
+        "visibility_rules": [
+          "extras, impossible"
+        ]
+      },
+      {
+        "name": "Get a Yacht",
+        "visibility_rules": [
+          "extras"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 775,
+      "y": 160
+      }
+    ]
+  }
+]

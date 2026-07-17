@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Mahjong Solitaire",
+    "access_rules": [
+      "^$mahjong"
+    ],
+    "sections": [
+      {
+        "name": "First Clear"
+      },
+      {
+        "name": "Clear 1 Beginner Stage"
+      },
+      {
+        "name": "Clear 1 Standard Stage"
+      },
+      {
+        "name": "Clear 1 Advanced Stage"
+      },
+      {
+        "name": "Beginner Stage with 2 Stars",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "Standard Stage with 2 Stars",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "Advanced Stage with 2 Stars",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      },
+      {
+        "name": "Beginner Stage with 3 Stars",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "Standard Stage with 3 Stars",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      },
+      {
+        "name": "Advanced Stage with 3 Stars",
+        "visibility_rules": [
+          "extras, impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 950,
+      "y": 780
+      }
+    ]
+  }
+]

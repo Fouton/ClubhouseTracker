@@ -1,0 +1,71 @@
+{
+  "game_settings": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 1",
+        "item_size": 54,
+        "margin": "0,0",
+        "h_alignment": "left",
+        "rows": [
+          ["amazing", "impossible", "extras", "goal"]
+        ]
+      }
+    ]
+  },
+  "pack_settings": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 1",
+        "item_size": 54,
+        "margin": "0,0",
+        "h_alignment": "left",
+        "rows": [
+          ["show-ap", "autotrack-beaten"]
+        ]
+      }
+    ]
+  },
+  "settings_popup": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "top",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Game Settings",
+              "dock": "Right",
+              "content": {
+                "type": "layout",
+                "key": "game_settings"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pack Settings",
+              "dock": "Right",
+              "content": {
+                "type": "layout",
+                "key": "pack_settings"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

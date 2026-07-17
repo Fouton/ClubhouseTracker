@@ -1,0 +1,41 @@
+[
+  {
+    "name": "War",
+    "access_rules": [
+      "^$war"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat CPU"
+      },
+      {
+        "name": "3 in a Row",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "20 Points",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      },
+      {
+        "name": "4 in a Row",
+        "visibility_rules": [
+          "extras, impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 425,
+      "y": 520
+      }
+    ]
+  }
+]

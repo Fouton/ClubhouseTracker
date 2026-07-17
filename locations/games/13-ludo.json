@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Ludo",
+    "access_rules": [
+      "^$ludo"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Win vs CPU"
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 950,
+      "y": 285
+      }
+    ]
+  }
+]

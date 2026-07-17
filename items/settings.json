@@ -1,0 +1,251 @@
+[
+  {
+    "name": "Show AP Buttons",
+    "type": "toggle",
+    "img": "images/settings/AP.png",
+    "codes": "show-ap"
+  },
+  {
+    "name": "Autotrack Beaten Games",
+    "type": "toggle",
+    "img": "images/settings/trophy.png",
+    "initial_active_state": true,
+    "codes": "autotrack-beaten"
+  },
+  {
+    "name": "Amazing CPUs",
+    "type": "toggle",
+    "img": "images/settings/Amazing.png",
+    "codes": "amazing"
+  },
+  {
+    "name": "Impossible CPUs",
+    "type": "toggle",
+    "img": "images/settings/Impossible.png",
+    "codes": "impossible"
+  },
+  {
+    "name": "Additional Checks",
+    "type": "toggle",
+    "img": "images/settings/AP.png",
+    "codes": "extras"
+  },
+  {
+    "name": "Victory Condition",
+    "type": "progressive",
+    "allow_disabled": false,
+    "codes": "goal",
+    "stages": [
+        {
+            "name": "Victory: Games Beaten", 
+            "img": "images/settings/games.png"
+        },
+        {
+            "name": "Victory: Majors", 
+            "img": "images/settings/major.png"
+        },
+        {
+            "name": "Victory: Minors", 
+            "img": "images/settings/minor.png"
+        },
+        {
+            "name": "Victory: Trophies", 
+            "img": "images/settings/trophy.png"
+        }
+    ]
+  },
+  {
+    "name": "Total Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "required",
+    "initial_quantity": 35,
+    "min_quantity": 0,
+    "max_quantity": 51,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "allow_disabled": false
+  },
+  {
+    "name": "Major: Board Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "major-boards-req",
+    "initial_quantity": 11,
+    "min_quantity": 0,
+    "max_quantity": 19,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Major: Card Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "major-cards-req",
+    "initial_quantity": 7,
+    "min_quantity": 0,
+    "max_quantity": 11,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Major: Sports Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "major-sports-req",
+    "initial_quantity": 6,
+    "min_quantity": 0,
+    "max_quantity": 10,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Major: Variety/SP Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "major-variety-req",
+    "initial_quantity": 6,
+    "min_quantity": 0,
+    "max_quantity": 11,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Minor: Wooden Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "minor-wooden-req",
+    "initial_quantity": 5,
+    "min_quantity": 0,
+    "max_quantity": 8,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Minor: Paper/Plastic Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "minor-paper-req",
+    "initial_quantity": 4,
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Minor: JP Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "minor-jp-req",
+    "initial_quantity": 5,
+    "min_quantity": 0,
+    "max_quantity": 8,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Minor: Non JP Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "minor-non-jp-req",
+    "initial_quantity": 5,
+    "min_quantity": 0,
+    "max_quantity": 8,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Minor: Sophisticated Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "minor-sophisticated-req",
+    "initial_quantity": 3,
+    "min_quantity": 0,
+    "max_quantity": 5,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Minor: Toy Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "minor-toy-req",
+    "initial_quantity": 3,
+    "min_quantity": 0,
+    "max_quantity": 5,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Minor: Variety Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "minor-variety-req",
+    "initial_quantity": 4,
+    "min_quantity": 0,
+    "max_quantity": 7,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  },
+  {
+    "name": "Minor: Singleplayer Games Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "minor-single-req",
+    "initial_quantity": 2,
+    "min_quantity": 0,
+    "max_quantity": 4,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "overlay_background": "#000000",
+    "allow_disabled": false
+  }
+]

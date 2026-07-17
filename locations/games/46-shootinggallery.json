@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Shooting Gallery",
+    "access_rules": [
+      "^$shootinggallery"
+    ],
+    "sections": [
+      {
+        "name": "First Completion"
+      },
+      {
+        "name": "100 Points"
+      },
+      {
+        "name": "150 Points"
+      },
+      {
+        "name": "200 Points",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "250 Points",
+        "visibility_rules": [
+          "impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 425,
+      "y": 780
+      }
+    ]
+  }
+]

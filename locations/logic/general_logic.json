@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Release",
+    "children": [
+      {
+        "name": "Release",
+        "visibility_rules": [
+          "show-ap"
+        ],
+        "access_rules": [
+          "^$victory"
+        ],
+        "sections": [
+          {
+            "name": "Click Here To !release Game"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "board",
+            "x": 115,
+            "y": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Victory",
+    "children": [
+      {
+        "name": "Victory",
+        "visibility_rules": [
+          "show-ap"
+        ],
+        "access_rules": [
+          "^$victory"
+        ],
+        "sections": [
+          {
+            "name": "Click to Complete Goal"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "board",
+            "x": 55,
+            "y": 50
+          }
+        ]
+      }
+    ]
+  }
+]

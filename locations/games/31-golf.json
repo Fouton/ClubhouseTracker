@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Golf",
+    "access_rules": [
+      "^$golf"
+    ],
+    "sections": [
+      {
+        "name": "First Completion"
+      },
+      {
+        "name": "Achieve Par in 3 Holes"
+      },
+      {
+        "name": "Achieve Par in 9 Holes"
+      },
+      {
+        "name": "Achieve -1 in 3 Holes"
+      },
+      {
+        "name": "Achieve -2 in 3 Holes",
+        "visibility_rules": ["amazing"]
+      },
+      {
+        "name": "Achieve -3 in 3 Holes",
+        "visibility_rules": ["impossible"]
+      },
+      {
+        "name": "Achieve -3 in 9 Holes"
+      },
+      {
+        "name": "Achieve -6 in 9 Holes",
+        "visibility_rules": ["amazing"]
+      },
+      {
+        "name": "Achieve -9 in 9 Holes",
+        "visibility_rules": ["impossible"]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 950,
+      "y": 520
+      }
+    ]
+  }
+]

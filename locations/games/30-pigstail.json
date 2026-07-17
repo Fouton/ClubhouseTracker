@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Pig's Tail",
+    "access_rules": [
+      "^$pigstail"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat CPU"
+      },
+      {
+        "name": "10 or Fewer Points",
+        "visibility_rules": [
+          "extras"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 775,
+      "y": 520
+      }
+    ]
+  }
+]

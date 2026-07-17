@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Texas Hold'em",
+    "access_rules": [
+      "^$holdem"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Win vs CPU"
+      },
+      {
+        "name": "200 Chips",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1125,
+      "y": 400
+      }
+    ]
+  }
+]

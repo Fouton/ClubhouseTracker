@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Hit and Blow",
+    "access_rules": [
+      "^$hitandblow"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Win with Duplicate Colors"
+      },
+      {
+        "name": "Win without Duplicate Colors"
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1125,
+      "y": 160
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Takoyaki",
+    "access_rules": [
+      "^$takoyaki"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat CPU"
+      },
+      {
+        "name": "3-Streak",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 600,
+      "y": 520
+      }
+    ]
+  }
+]

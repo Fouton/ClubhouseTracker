@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Spider Solitaire",
+    "access_rules": [
+      "^$spider"
+    ],
+    "sections": [
+      {
+        "name": "First Clear"
+      },
+      {
+        "name": "Clear Beginner"
+      },
+      {
+        "name": "Clear Standard"
+      },
+      {
+        "name": "Clear Advanced",
+        "visibility_rules": [
+          "amazing"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1294,
+      "y": 780
+      }
+    ]
+  }
+]

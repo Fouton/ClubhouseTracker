@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Backgammon",
+    "access_rules": [
+      "^$backgammon"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat Normal CPU"
+      },
+      {
+        "name": "Defeat Hard CPU"
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1125,
+      "y": 285
+      }
+    ]
+  }
+]

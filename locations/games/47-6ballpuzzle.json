@@ -1,0 +1,56 @@
+[
+  {
+    "name": "6-Ball Puzzle",
+    "access_rules": [
+      "^$sixballpuzzle"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat Normal CPU"
+      },
+      {
+        "name": "Defeat Hard CPU"
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ]
+      },
+      {
+        "name": "Form a Line",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "Form a Pyramid",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "Form a Hexagon",
+        "visibility_rules": [
+          "extras"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 600,
+      "y": 780
+      }
+    ]
+  }
+]

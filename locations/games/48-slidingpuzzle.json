@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Sliding Puzzle",
+    "access_rules": [
+      "^$slidingpuzzle"
+    ],
+    "sections": [
+      {
+        "name": "First Completion"
+      },
+      {
+        "name": "100 Points with Turtle"
+      },
+      {
+        "name": "300 Points with Turtle"
+      },
+      {
+        "name": "500 Points with Turtle",
+        "visibility_rules": ["extras, amazing"]
+      },
+      {
+        "name": "750 Points with Turtle",
+        "visibility_rules": ["extras, impossible"]
+      },
+      {
+        "name": "70 Points with Rabbit"
+      },
+      {
+        "name": "210 Points with Rabbit"
+      },
+      {
+        "name": "350 Points with Rabbit",
+        "visibility_rules": ["extras, amazing"]
+      },
+      {
+        "name": "520 Points with Rabbit",
+        "visibility_rules": ["extras, impossible"]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 775,
+      "y": 780
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Fishing",
+    "access_rules": [
+      "^$fishing"
+    ],
+    "sections": [
+      {
+        "name": "First Completion"
+      },
+      {
+        "name": "2000g in 3 Minutes"
+      },
+      {
+        "name": "5000g in 3 Minutes"
+      },
+      {
+        "name": "10000g in 3 Minutes",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "15000g in 3 Minutes",
+        "visibility_rules": [
+          "impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1464,
+      "y": 640
+      }
+    ]
+  }
+]

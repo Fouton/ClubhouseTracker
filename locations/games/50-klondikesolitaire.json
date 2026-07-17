@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Klondike Solitaire",
+    "access_rules": [
+      "^$klondike"
+    ],
+    "sections": [
+      {
+        "name": "First Clear"
+      },
+      {
+        "name": "Clear with Draw 1"
+      },
+      {
+        "name": "Clear with Draw 3"
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1125,
+      "y": 780
+      }
+    ]
+  }
+]

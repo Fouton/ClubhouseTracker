@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Billiards",
+    "access_rules": [
+      "^$billiards"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Win at 9-Ball"
+      },
+      {
+        "name": "Win with Simple Rules"
+      },
+      {
+        "name": "Win at 8-Ball"
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1125,
+      "y": 520
+      }
+    ]
+  }
+]

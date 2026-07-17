@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Team Tanks",
+    "access_rules": [
+      "^$teamtanks"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Clear Field #1"
+      },
+      {
+        "name": "Clear Field #2"
+      },
+      {
+        "name": "Clear Field #3"
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 250,
+      "y": 780
+      }
+    ]
+  }
+]

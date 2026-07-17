@@ -1,0 +1,62 @@
+[
+  {
+    "name": "First Wins of Categories",
+    "sections": [
+      {
+        "name": "Board Games",
+        "access_rules": ["^$major_boards"]
+      },
+      {
+        "name": "Card Games",
+        "access_rules": ["^$major_cards"]
+      },
+      {
+        "name": "Sports Games",
+        "access_rules": ["^$major_sports"]
+      },
+      {
+        "name": "Variety and Singleplayer Games",
+        "access_rules": ["^$major_variety"]
+      },
+      {
+        "name": "Wooden Games",
+        "access_rules": ["^$minor_wooden"]
+      },
+      {
+        "name": "Paper and Plastic Board Games",
+        "access_rules": ["^$minor_paper"]
+      },
+      {
+        "name": "Japanese Games",
+        "access_rules": ["^$minor_jp"]
+      },
+      {
+        "name": "Non-Japanese Card Games",
+        "access_rules": ["^$minor_non_jp"]
+      },
+      {
+        "name": "Sophisticated Games",
+        "access_rules": ["^$minor_sophisticated"]
+      },
+      {
+        "name": "Toy Games",
+        "access_rules": ["^$minor_toy"]
+      },
+      {
+        "name": "Variety Games",
+        "access_rules": ["^$minor_variety"]
+      },
+      {
+        "name": "Singleplayer Games",
+        "access_rules": ["^$minor_single"]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+		  "x": 250,
+      "y": 160
+      }
+    ]
+  }
+]

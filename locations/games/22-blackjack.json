@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Blackjack",
+    "access_rules": [
+      "^$blackjack"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Win vs CPU"
+      },
+      {
+        "name": "Get a Blackjack",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "200 Chips",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      },
+      {
+        "name": "300 Chips",
+        "visibility_rules": [
+          "extras, impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 950,
+      "y": 400
+      }
+    ]
+  }
+]

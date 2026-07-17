@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Hanafuda",
+    "access_rules": [
+      "^$hanafuda"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat Normal CPU"
+      },
+      {
+        "name": "Defeat Hard CPU"
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ]
+      },
+      {
+        "name": "15 Points",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "Win a Round using Koi-Koi",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      },
+      {
+        "name": "30 Points",
+        "visibility_rules": [
+          "extras, impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 425,
+      "y": 400
+      }
+    ]
+  }
+]

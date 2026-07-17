@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dominoes",
+    "access_rules": [
+      "^$dominoes"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Win at Five-Up"
+      },
+      {
+        "name": "Win with Simple Rules"
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 600,
+      "y": 285
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Riichi Mahjong",
+    "access_rules": [
+      "^$riichi"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat Normal CPU"
+      },
+      {
+        "name": "Defeat Hard CPU"
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ]
+      },
+      {
+        "name": "Win a Round",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "Reveal hand as Tenpai",
+        "visibility_rules": [
+          "extras"
+        ]
+      },
+      {
+        "name": "Win a Round as Non-East",
+        "visibility_rules": [
+          "extras, amazing"
+        ]
+      },
+      {
+        "name": "Win a Round as East",
+        "visibility_rules": [
+          "extras, impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 600,
+      "y": 400
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Matching",
+    "access_rules": [
+      "^$matching"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "Defeat Normal CPU"
+      },
+      {
+        "name": "Defeat Hard CPU"
+      },
+      {
+        "name": "Defeat Amazing CPU",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "Defeat Impossible CPU",
+        "visibility_rules": [
+          "impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 250,
+      "y": 520
+      }
+    ]
+  }
+]

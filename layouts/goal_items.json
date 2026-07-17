@@ -1,0 +1,264 @@
+{
+  "victory_games": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "14,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "0, 0",
+		"item_width": 24,
+		"item_height": 24,
+        "margin": "0,0",
+        "h_alignment": "center",
+        "rows": [
+          ["completed", "out-of", "required"]
+        ]
+      }
+    ]
+  },
+  "victory_majors": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+		"type": "group",
+		"header": "Board Games",
+		"dock": "left",
+		"content": {
+			"type": "itemgrid",
+        	"item_margin": "0, 0",
+			"item_width": 24,
+			"item_height": 24,
+			"margin": "16,0",
+			"h_alignment": "left",
+			"rows": [
+				[ "major-boards", "out-of", "major-boards-req"]
+			]
+		}
+      },
+      {
+		"type": "group",
+		"header": "Card Games",
+		"dock": "left",
+		"content": {
+			"type": "itemgrid",
+        	"item_margin": "0, 0",
+			"item_width": 24,
+			"item_height": 24,
+			"margin": "11,0",
+			"h_alignment": "left",
+			"rows": [
+				[ "major-cards", "out-of", "major-cards-req" ]
+			]
+		}
+      },
+      {
+		"type": "group",
+		"header": "Sports Games",
+		"dock": "left",
+		"content": {
+			"type": "itemgrid",
+        	"item_margin": "0, 0",
+			"item_width": 24,
+			"item_height": 24,
+			"margin": "17,0",
+			"h_alignment": "left",
+			"rows": [
+				[ "major-sports", "out-of", "major-sports-req" ]
+			]
+		}
+      },
+      {
+		"type": "group",
+		"header": "Variety & SP Games",
+		"dock": "left",
+		"content": {
+			"type": "itemgrid",
+        	"item_margin": "0, 0",
+			"item_width": 24,
+			"item_height": 24,
+			"margin": "35,0",
+			"h_alignment": "left",
+			"rows": [
+				[ "major-variety", "small-out-of", "major-variety-req"]
+			]
+		}
+      }
+    ]
+  },
+  "victory_minors": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+			{
+				"type": "group",
+				"header": "Wooden Games",
+				"dock": "left",
+				"content": {
+					"type": "itemgrid",
+					"item_margin": "0, 0",
+					"item_width": 14,
+					"item_height": 24,
+					"margin": "37,0",
+					"h_alignment": "left",
+					"rows": [
+						[ "minor-wooden", "small-out-of", "minor-wooden-req"]
+					]
+				}
+			},
+			{
+				"type": "group",
+				"header": "Paper/Plastic",
+				"dock": "left",
+				"content": {
+					"type": "itemgrid",
+					"item_margin": "0, 0",
+					"item_width": 14,
+					"item_height": 24,
+					"margin": "30,0,48,0",
+					"h_alignment": "left",
+					"rows": [
+						[ "minor-paper", "small-out-of", "minor-paper-req" ]
+					]
+				}
+			},
+			{
+				"type": "group",
+				"header": "JP Games",
+				"dock": "left",
+				"content": {
+					"type": "itemgrid",
+					"item_margin": "0, 0",
+					"item_width": 14,
+					"item_height": 24,
+					"margin": "18,0,30,0",
+					"h_alignment": "left",
+					"rows": [
+						[ "minor-jp", "small-out-of", "minor-jp-req" ]
+					]
+				}
+			},
+			{
+				"type": "group",
+				"header": "Non JP Games",
+				"dock": "left",
+				"content": {
+					"type": "itemgrid",
+					"item_margin": "0, 0",
+					"item_width": 14,
+					"item_height": 24,
+					"margin": "34,0",
+					"h_alignment": "left",
+					"rows": [
+						[ "minor-non-jp", "small-out-of", "minor-non-jp-req"]
+					]
+				}
+			}
+		]
+	  },
+      {
+		"type": "array",
+		"orientation": "horizontal",
+		"margin": "0,0",
+		"content": [
+			{
+                "type": "item",
+				"item_width": 4,
+				"item_height": 4,
+                "item": ""
+			},
+			{
+				"type": "group",
+				"header": "Sophisticated",
+				"dock": "left",
+				"content": {
+					"type": "itemgrid",
+					"item_margin": "0, 0",
+					"item_width": 14,
+					"item_height": 24,
+					"margin": "33,0,45,0",
+					"h_alignment": "left",
+					"rows": [
+						[ "minor-sophisticated", "small-out-of", "minor-sophisticated-req"]
+					]
+				}
+			},
+			{
+				"type": "group",
+				"header": "Toy Games",
+				"dock": "left",
+				"content": {
+					"type": "itemgrid",
+					"item_margin": "0, 0",
+					"item_width": 14,
+					"item_height": 24,
+					"margin": "23,0,33,0",
+					"h_alignment": "left",
+					"rows": [
+						[ "minor-toy", "small-out-of", "minor-toy-req"]
+					]
+				}
+			},
+			{
+				"type": "group",
+				"header": "Variety Games",
+				"dock": "left",
+				"content": {
+					"type": "itemgrid",
+					"item_margin": "0, 0",
+					"item_width": 14,
+					"item_height": 24,
+					"margin": "33,0",
+					"h_alignment": "left",
+					"rows": [
+						[ "minor-variety", "small-out-of", "minor-variety-req"]
+					]
+				}
+			},
+			{
+				"type": "group",
+				"header": "Singleplayer",
+				"dock": "left",
+				"content": {
+					"type": "itemgrid",
+					"item_margin": "0, 0",
+					"item_width": 14,
+					"item_height": 24,
+					"margin": "29,0",
+					"h_alignment": "left",
+					"rows": [
+						[ "minor-single", "small-out-of", "minor-single-req"]
+					]
+				}
+			}
+		]
+	  }
+	]
+  },
+  "victory_trophies": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "14,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "0, 0",
+		"item_width": 24,
+		"item_height": 24,
+        "margin": "0,0",
+        "h_alignment": "left",
+        "rows": [
+          ["trophy", "out-of", "required"]
+        ]
+      }
+    ]
+  }
+}

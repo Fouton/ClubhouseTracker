@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Bowling",
+    "access_rules": [
+      "^$bowling"
+    ],
+    "sections": [
+      {
+        "name": "First Win"
+      },
+      {
+        "name": "30 Points in 5 Frames"
+      },
+      {
+        "name": "40 Points in 5 Frames"
+      },
+      {
+        "name": "50 Points in 5 Frames",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "60 Points in 5 Frames",
+        "visibility_rules": [
+          "impossible"
+        ]
+      },
+      {
+        "name": "60 Points in 10 Frames"
+      },
+      {
+        "name": "80 Points in 10 Frames"
+      },
+      {
+        "name": "100 Points in 10 Frames",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "120 Points in 10 Frames",
+        "visibility_rules": [
+          "impossible"
+        ]
+      },
+      {
+        "name": "64 Points in Challenge"
+      },
+      {
+        "name": "72 Points in Challenge"
+      },
+      {
+        "name": "80 Points in Challenge",
+        "visibility_rules": [
+          "amazing"
+        ]
+      },
+      {
+        "name": "88 Points in Challenge",
+        "visibility_rules": [
+          "impossible"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1294,
+      "y": 520
+      }
+    ]
+  }
+]
