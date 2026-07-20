@@ -11,7 +11,25 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["amazing", "impossible", "extras", "goal"]
+          ["amazing", "impossible", "extras", "piano_checks", "gate_categories"]
+        ]
+      }
+    ]
+  },
+  "goal_settings": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 1",
+        "item_width": 54,
+        "item_height": 54,
+        "margin": "0,0",
+        "h_alignment": "left",
+        "rows": [
+          ["victory_games", "victory_majors", "victory_minors", "victory_trophies", "victories_needed"]
         ]
       }
     ]
@@ -28,7 +46,7 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["show-ap", "autotrack-beaten"]
+          ["show-ap"]
         ]
       }
     ]
@@ -43,7 +61,6 @@
         {
           "type": "dock",
           "dock": "top",
-          "v_alignment": "stretch",
           "content": [
             {
               "type": "group",
@@ -52,6 +69,15 @@
               "content": {
                 "type": "layout",
                 "key": "game_settings"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Goal Settings",
+              "dock": "Right",
+              "content": {
+                "type": "layout",
+                "key": "goal_settings"
               }
             },
             {

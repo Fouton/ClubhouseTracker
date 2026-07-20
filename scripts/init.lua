@@ -59,16 +59,26 @@ Tracker:AddLocations("locations/games/48-slidingpuzzle.json")
 Tracker:AddLocations("locations/games/49-mahjongsolitaire.json")
 Tracker:AddLocations("locations/games/50-klondikesolitaire.json")
 Tracker:AddLocations("locations/games/51-spidersolitaire.json")
+Tracker:AddLocations("locations/games/52-piano.json")
 Tracker:AddLocations("locations/games/categories.json")
 
 Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/settings.json")
+Tracker:AddLayouts("layouts/games/on.json")
+Tracker:AddLayouts("layouts/majors/on.json")
+Tracker:AddLayouts("layouts/minors/on.json")
+Tracker:AddLayouts("layouts/trophies/on.json")
+Tracker:AddLayouts("layouts/total/on.json")
 Tracker:AddLayouts("layouts/goal_items.json")
 
 ScriptHost:LoadScript("scripts/pack_utils.lua")
-ScriptHost:AddWatchForCode("Layout Swapper", "goal", swapgoal)
+ScriptHost:AddWatchForCode("Games Watch", "victory_games", games_layout)
+ScriptHost:AddWatchForCode("Trophies Watch", "victory_trophies", trophies_layout)
+ScriptHost:AddWatchForCode("Majors Watch", "victory_majors", majors_layout)
+ScriptHost:AddWatchForCode("Minors Watch", "victory_minors", minors_layout)
+
 if PopVersion and PopVersion >= "0.18.0" then
     ScriptHost:LoadScript("scripts/autotracking.lua")
 end

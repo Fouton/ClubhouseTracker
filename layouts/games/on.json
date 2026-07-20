@@ -1,0 +1,25 @@
+{
+  "victory_games": {
+    "type": "group",
+    "header": "Games Beaten",
+    "dock": "top",
+    "content": {
+      "type": "array",
+      "orientation": "horizontal",
+      "margin": "14,0",
+      "content": [
+        {
+          "type": "itemgrid",
+          "item_margin": "0, 0",
+          "item_width": 24,
+          "item_height": 24,
+          "margin": "0,0",
+          "h_alignment": "center",
+          "rows": [
+            ["completed", "out-of", "games-req"]
+          ]
+        }
+      ]
+    }
+  }
+}

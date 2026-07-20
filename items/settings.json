@@ -6,13 +6,6 @@
     "codes": "show-ap"
   },
   {
-    "name": "Autotrack Beaten Games",
-    "type": "toggle",
-    "img": "images/settings/trophy.png",
-    "initial_active_state": true,
-    "codes": "autotrack-beaten"
-  },
-  {
     "name": "Amazing CPUs",
     "type": "toggle",
     "img": "images/settings/Amazing.png",
@@ -31,36 +24,91 @@
     "codes": "extras"
   },
   {
-    "name": "Victory Condition",
-    "type": "progressive",
-    "allow_disabled": false,
-    "codes": "goal",
-    "stages": [
-        {
-            "name": "Victory: Games Beaten", 
-            "img": "images/settings/games.png"
-        },
-        {
-            "name": "Victory: Majors", 
-            "img": "images/settings/major.png"
-        },
-        {
-            "name": "Victory: Minors", 
-            "img": "images/settings/minor.png"
-        },
-        {
-            "name": "Victory: Trophies", 
-            "img": "images/settings/trophy.png"
-        }
-    ]
+    "name": "Piano Checks",
+    "type": "toggle",
+    "img": "images/settings/piano.png",
+    "codes": "piano_checks"
   },
   {
-    "name": "Total Needed",
+    "name": "Gate Categories",
+    "type": "toggle",
+    "img": "images/settings/gate.png",
+    "codes": "gate_categories"
+  },
+  {
+    "name": "Beat Games",
+    "type": "toggle",
+    "img": "images/settings/games.png",
+    "initial_active_state": true,
+    "codes": "victory_games"
+  },
+  {
+    "name": "Beat Major Games",
+    "type": "toggle",
+    "img": "images/settings/major.png",
+    "initial_active_state": true,
+    "codes": "victory_majors"
+  },
+  {
+    "name": "Beat Minor Games",
+    "type": "toggle",
+    "img": "images/settings/minor.png",
+    "initial_active_state": true,
+    "codes": "victory_minors"
+  },
+  {
+    "name": "Get Trophies",
+    "type": "toggle",
+    "img": "images/settings/trophy.png",
+    "initial_active_state": true,
+    "codes": "victory_trophies"
+  },
+  {
+    "name": "Victories Needed",
+    "type": "consumable",
+    "img": "images/settings/wins.png",
+    "codes": "victories_needed",
+    "initial_quantity": 1,
+    "min_quantity": 1,
+    "max_quantity": 4,
+    "increment": 1,
+    "overlay_align": "center",
+    "overlay_font_size": "16",
+    "allow_disabled": false
+  },
+  {
+    "name": "Victory Points",
+    "type": "consumable",
+    "img": "images/settings/victories.png",
+    "codes": "victories",
+    "initial_quantity": 0,
+    "min_quantity": 0,
+    "max_quantity": 4,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "allow_disabled": false
+  },
+  {
+    "name": "Games Needed",
     "type": "consumable",
     "img": "images/misc/goal_blank.png",
     "disabled_img": "images/misc/zero.png",
     "disabled_img_mods": "",
-    "codes": "required",
+    "codes": "games-req",
+    "initial_quantity": 35,
+    "min_quantity": 0,
+    "max_quantity": 51,
+    "increment": 1,
+    "overlay_font_size": "16",
+    "allow_disabled": false
+  },
+  {
+    "name": "Trophies Needed",
+    "type": "consumable",
+    "img": "images/misc/goal_blank.png",
+    "disabled_img": "images/misc/zero.png",
+    "disabled_img_mods": "",
+    "codes": "trophies-req",
     "initial_quantity": 35,
     "min_quantity": 0,
     "max_quantity": 51,
@@ -79,6 +127,7 @@
     "min_quantity": 0,
     "max_quantity": 19,
     "increment": 1,
+    "overlay_align": "left",
     "overlay_font_size": "16",
     "overlay_background": "#000000",
     "allow_disabled": false
@@ -94,6 +143,7 @@
     "min_quantity": 0,
     "max_quantity": 11,
     "increment": 1,
+    "overlay_align": "left",
     "overlay_font_size": "16",
     "overlay_background": "#000000",
     "allow_disabled": false
@@ -109,6 +159,7 @@
     "min_quantity": 0,
     "max_quantity": 10,
     "increment": 1,
+    "overlay_align": "left",
     "overlay_font_size": "16",
     "overlay_background": "#000000",
     "allow_disabled": false
@@ -124,6 +175,7 @@
     "min_quantity": 0,
     "max_quantity": 11,
     "increment": 1,
+    "overlay_align": "left",
     "overlay_font_size": "16",
     "overlay_background": "#000000",
     "allow_disabled": false

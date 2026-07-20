@@ -1,0 +1,79 @@
+{
+  "victory_majors": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+		{
+			"type": "group",
+			"header": "Majors:  ",
+			"dock": "left",
+			"content": {}
+		},
+		{
+			"type": "group",
+			"header": "Board Games",
+			"dock": "left",
+			"content": {
+				"type": "itemgrid",
+				"item_margin": "0, 0",
+				"item_width": 24,
+				"item_height": 24,
+				"margin": "16,0,28,0",
+				"h_alignment": "left",
+				"rows": [
+					[ "major-boards", "out-of", "major-boards-req"]
+				]
+			}
+		},
+		{
+			"type": "group",
+			"header": "Card Games",
+			"dock": "left",
+			"content": {
+				"type": "itemgrid",
+				"item_margin": "0, 0",
+				"item_width": 24,
+				"item_height": 24,
+				"margin": "11,0,18,0",
+				"h_alignment": "left",
+				"rows": [
+					[ "major-cards", "out-of", "major-cards-req" ]
+				]
+			}
+		},
+		{
+			"type": "group",
+			"header": "Sports Games",
+			"dock": "left",
+			"content": {
+				"type": "itemgrid",
+				"item_margin": "0, 0",
+				"item_width": 24,
+				"item_height": 24,
+				"margin": "17,0",
+				"h_alignment": "left",
+				"rows": [
+					[ "major-sports", "out-of", "major-sports-req" ]
+				]
+			}
+		},
+		{
+			"type": "group",
+			"header": "Variety & SP Games",
+			"dock": "left",
+			"content": {
+				"type": "itemgrid",
+				"item_margin": "0, 0",
+				"item_width": 24,
+				"item_height": 24,
+				"margin": "35,0",
+				"h_alignment": "left",
+				"rows": [
+					[ "major-variety", "out-of", "major-variety-req"]
+				]
+			}
+		}
+    ]
+  }
+}

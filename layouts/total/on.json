@@ -1,0 +1,29 @@
+{
+  "totals": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "group",
+        "header": "Totals:                    ",
+        "dock": "top",
+        "content": {}
+      },
+      {
+        "type": "layout",
+        "key": "victory_games"
+      },
+      {
+        "type": "group",
+        "header": "                ",
+        "dock": "top",
+        "content": {}
+      },
+      {
+        "type": "layout",
+        "key": "victory_trophies"
+      }
+    ]
+  }
+}

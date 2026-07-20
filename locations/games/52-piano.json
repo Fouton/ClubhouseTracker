@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Piano",
+    "access_rules": [
+      "^$piano"
+    ],
+    "sections": [
+      {
+        "name": "Play Ode to Joy"
+      },
+      {
+        "name": "Play Joy To The World"
+      },
+      {
+        "name": "Play Don't Forget"
+      },
+      {
+        "name": "Play Witch Doctor"
+      },
+      {
+        "name": "Play Twinkle Twinkle Little Star"
+      },
+      {
+        "name": "Play Song of Time"
+      }
+    ],
+    "map_locations": [
+      {
+      "map": "board",
+      "x": 1468,
+      "y": 780
+      }
+    ]
+  }
+]

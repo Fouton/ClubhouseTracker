@@ -38,13 +38,8 @@
               }
             },
             {
-              "type": "group",
-              "header": "Games Beaten",
-              "dock": "top",
-              "content": {
-                "type": "layout",
-                "key": "victory_games"
-              }
+              "type": "layout",
+              "key": "victory_conditions"
             }
           ]
         }

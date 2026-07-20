@@ -24,12 +24,13 @@ MINOR_SOPHISTICATED_IDS = { 146, 155, 159, 172, 206 }
 MINOR_TOY_IDS = { 181, 186, 191, 196, 201 }
 MINOR_VARIETY_IDS = { 176, 211, 216, 221, 226, 230, 235 }
 MINOR_SINGLE_IDS = { 243, 252, 262, 265 }
-COUNTERS = { "completed",  "trophy",
-    "major-boards", "major-cards", "major-sports", "major-variety", 
+COUNTERS = { "completed", "major-boards", "major-cards", "major-sports", "major-variety", 
     "minor-wooden", "minor-paper", "minor-jp", "minor-non-jp",
-    "minor-sophisticated", "minor-toy", "minor-variety", "minor-single"}
+    "minor-sophisticated", "minor-toy", "minor-variety", "minor-single" }
+AP_CONNECTION = false
 
 function onClear(slot_data)
+    AP_CONNECTION = true
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
     end
@@ -77,12 +78,9 @@ function onClear(slot_data)
             end
         end
     end
-    local autotrack_beaten = Tracker:FindObjectForCode('autotrack-beaten')
-    if autotrack_beaten.Active then
-        for _, counter in ipairs(COUNTERS) do
-            local obj = Tracker:FindObjectForCode(counter)
-            obj.AcquiredCount = 0
-        end
+    for _, counter in ipairs(COUNTERS) do
+        local obj = Tracker:FindObjectForCode(counter)
+        obj.AcquiredCount = 0
     end
     -- slot data
     if slot_data['amazing_cpus'] then
@@ -100,9 +98,16 @@ function onClear(slot_data)
     end
     
     if slot_data['games_required_for_victory'] then
-        local obj = Tracker:FindObjectForCode('required')
+        local obj = Tracker:FindObjectForCode('games-req')
         if obj then
             obj.AcquiredCount = slot_data['games_required_for_victory']
+        end
+    end
+    
+    if slot_data['trophies_required_for_victory'] then
+        local obj = Tracker:FindObjectForCode('trophies-req')
+        if obj then
+            obj.AcquiredCount = slot_data['trophies_required_for_victory']
         end
     end
     
@@ -113,10 +118,48 @@ function onClear(slot_data)
         end
     end
     
-    if slot_data['victory_condition'] then
-        local obj = Tracker:FindObjectForCode('goal')
+    if slot_data['piano_checks'] then
+        local obj = Tracker:FindObjectForCode('piano_checks')
         if obj then
-            obj.CurrentStage = slot_data['victory_condition']
+            obj.Active = slot_data['piano_checks']
+        end
+    end
+    
+    if slot_data['category_gate_count'] then
+        local obj = Tracker:FindObjectForCode('gate_categories')
+        if obj then
+            obj.Active = slot_data['category_gate_count']
+        end
+    end
+    
+    if slot_data['victory_condition_0'] then
+        local obj = Tracker:FindObjectForCode('victory_games')
+        if obj then
+            obj.Active = slot_data['victory_condition_0']
+        end
+    end
+    if slot_data['victory_condition_1'] then
+        local obj = Tracker:FindObjectForCode('victory_majors')
+        if obj then
+            obj.Active = slot_data['victory_condition_1']
+        end
+    end
+    if slot_data['victory_condition_2'] then
+        local obj = Tracker:FindObjectForCode('victory_minors')
+        if obj then
+            obj.Active = slot_data['victory_condition_2']
+        end
+    end
+    if slot_data['victory_condition_3'] then
+        local obj = Tracker:FindObjectForCode('victory_trophies')
+        if obj then
+            obj.Active = slot_data['victory_condition_3']
+        end
+    end
+    if slot_data['victory_condition_amount'] then
+        local obj = Tracker:FindObjectForCode('victories_needed')
+        if obj then
+            obj.AcquiredCount = slot_data['victory_condition_amount']
         end
     end
 
@@ -293,11 +336,9 @@ end
 function incrementByListAndID(code, location_id, id_base, id_cap, list)
     local obj = Tracker:FindObjectForCode(code)
     if obj and location_id >= id_base and location_id <= id_cap then
-        print(code .. ": successfully located")
         for _, id in ipairs(list) do
             if location_id == id then
                 obj.AcquiredCount = obj.AcquiredCount + 1
-                print("incremented")
             end
         end
     end
@@ -342,36 +383,33 @@ ScriptHost:AddOnLocationSectionChangedHandler("manual", function(section)
                 print(tostring(sectionID) .. " is not an AP location")
             end
         end
-    elseif (section.AvailableChestCount == 0) then
+    elseif (section.AvailableChestCount == 0) and AP_CONNECTION then
         -- AP location cleared
         local sectionID = section.FullID
         local apID = sectionIDToAPID[sectionID]
 
         -- for automating counter increases via autotracking
-        local auto = Tracker:FindObjectForCode('autotrack-beaten')
-        if auto.Active then
-            local completed = Tracker:FindObjectForCode('completed')
-            if completed and apID <= 268 then
-                for _, win in ipairs(FIRSTS) do
-                    if sectionID:find(win) then
-                        completed.AcquiredCount = completed.AcquiredCount + 1
-                    end
+        local completed = Tracker:FindObjectForCode('completed')
+        if completed and apID <= 268 then
+            for _, win in ipairs(FIRSTS) do
+                if sectionID:find(win) then
+                    completed.AcquiredCount = completed.AcquiredCount + 1
                 end
             end
-            incrementByListAndID('major-boards', apID, 1, 93, MAJOR_BOARDS_IDS)
-            incrementByListAndID('major-cards', apID, 85, 143, MAJOR_CARDS_IDS)
-            incrementByListAndID('major-sports', apID, 146, 206, MAJOR_SPORTS_IDS)
-            incrementByListAndID('major-variety', apID, 176, 265, MAJOR_VARIETY_IDS)
-
-            incrementByListAndID('minor-wooden', apID, 1, 70, MINOR_WOODEN_IDS)
-            incrementByListAndID('minor-paper', apID, 6, 65, MINOR_PAPER_IDS)
-            incrementByListAndID('minor-jp', apID, 45, 143, MINOR_JP_IDS)
-            incrementByListAndID('minor-non-jp', apID, 102, 135, MINOR_NON_JP_IDS)
-            incrementByListAndID('minor-sophisticated', apID, 146, 206, MINOR_SOPHISTICATED_IDS)
-            incrementByListAndID('minor-toy', apID, 181, 201, MINOR_TOY_IDS)
-            incrementByListAndID('minor-variety', apID, 176, 235, MINOR_VARIETY_IDS)
-            incrementByListAndID('minor-single', apID, 243, 265, MINOR_SINGLE_IDS)
         end
+        incrementByListAndID('major-boards', apID, 1, 93, MAJOR_BOARDS_IDS)
+        incrementByListAndID('major-cards', apID, 85, 143, MAJOR_CARDS_IDS)
+        incrementByListAndID('major-sports', apID, 146, 206, MAJOR_SPORTS_IDS)
+        incrementByListAndID('major-variety', apID, 176, 265, MAJOR_VARIETY_IDS)
+
+        incrementByListAndID('minor-wooden', apID, 1, 70, MINOR_WOODEN_IDS)
+        incrementByListAndID('minor-paper', apID, 6, 65, MINOR_PAPER_IDS)
+        incrementByListAndID('minor-jp', apID, 45, 143, MINOR_JP_IDS)
+        incrementByListAndID('minor-non-jp', apID, 102, 135, MINOR_NON_JP_IDS)
+        incrementByListAndID('minor-sophisticated', apID, 146, 206, MINOR_SOPHISTICATED_IDS)
+        incrementByListAndID('minor-toy', apID, 181, 201, MINOR_TOY_IDS)
+        incrementByListAndID('minor-variety', apID, 176, 235, MINOR_VARIETY_IDS)
+        incrementByListAndID('minor-single', apID, 243, 265, MINOR_SINGLE_IDS)
 
         if apID ~= nil then
             local res = Archipelago:LocationChecks({apID})
