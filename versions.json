@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.0.8",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.8/ClubhouseTracker.zip",
+			"sha256": "a684ef9e441425b9f90d7eae145cbbaaf3292a6e5895d184bde800a9b69ab04e",
+			"changelog": [
+				"Full Rework for latest APWorld"
+			]
+		},
+		{
 			"package_version": "1.0.0.7",
 			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.7/ClubhouseTracker.zip",
 			"sha256": "e1a90a68aba476be4c564e915281682dbb57a9b1584638b2551adee0a23e77d0",
