@@ -3,7 +3,7 @@
 		{
 			"package_version": "1.0.0.7",
 			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.7/ClubhouseTracker.zip",
-			"sha256": "256:e1a90a68aba476be4c564e915281682dbb57a9b1584638b2551adee0a23e77d0",
+			"sha256": "e1a90a68aba476be4c564e915281682dbb57a9b1584638b2551adee0a23e77d0",
 			"changelog": [
 				"Reworked Tracker for Belodie's new APWorld (Must be Version #2)"
 			]
