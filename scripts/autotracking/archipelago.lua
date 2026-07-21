@@ -125,10 +125,10 @@ function onClear(slot_data)
         end
     end
     
-    if slot_data['category_gate_count'] then
+    if slot_data['gate_categories'] then
         local obj = Tracker:FindObjectForCode('gate_categories')
         if obj then
-            obj.Active = slot_data['category_gate_count']
+            obj.Active = slot_data['gate_categories']
         end
     end
     
