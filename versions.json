@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.1.0",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.1.0/ClubhouseTracker.zip",
+			"sha256": "73ffdbad5d6968e797f09d9276b6e17aa0d78f80394a58d004ae75e751b2e496",
+			"changelog": [
+				"Changed War 20 -> 16"
+			]
+		},
+		{
 			"package_version": "1.0.0.9",
 			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.9/ClubhouseTracker.zip",
 			"sha256": "fa5363483fc9221f72ee16de950a57745f6e54f05cdce32cb7fa96ad4e411395",
