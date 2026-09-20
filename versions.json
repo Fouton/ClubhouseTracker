@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.0.9",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.9/ClubhouseTracker.zip",
+			"sha256": "fa5363483fc9221f72ee16de950a57745f6e54f05cdce32cb7fa96ad4e411395",
+			"changelog": [
+				"Fixed Gate Categories autotracking"
+			]
+		},
+		{
 			"package_version": "1.0.0.8",
 			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.0.8/ClubhouseTracker.zip",
 			"sha256": "a684ef9e441425b9f90d7eae145cbbaaf3292a6e5895d184bde800a9b69ab04e",
