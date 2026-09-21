@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.1.1",
+			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.1.1/ClubhouseTracker.zip",
+			"sha256": "3974850b73eda8a4b12e7a4e791703525ebd9038a6b0a002789854e3532146e6",
+			"changelog": [
+				"Unbroke it"
+			]
+		},
+		{
 			"package_version": "1.0.1.0",
 			"download_url": "https://github.com/Fouton/ClubhouseTracker/releases/download/V1.0.1.0/ClubhouseTracker.zip",
 			"sha256": "73ffdbad5d6968e797f09d9276b6e17aa0d78f80394a58d004ae75e751b2e496",
